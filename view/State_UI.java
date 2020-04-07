@@ -42,7 +42,7 @@ public class State_UI extends JFrame {
 			getContentPane().setLayout(null);
 			
 			setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-			setBounds(100, 100, 685, 459);
+			setBounds(100, 100, 961, 730);
 			
 			JLabel lblNewLabel_5 = new JLabel("CDC Logo");
 			lblNewLabel_5.setHorizontalAlignment(SwingConstants.CENTER);
@@ -52,56 +52,56 @@ public class State_UI extends JFrame {
 			
 			JLabel lblNewLabel = new JLabel("Picture of State");
 			lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-			lblNewLabel.setBounds(30, 88, 263, 160);
+			lblNewLabel.setBounds(30, 88, 345, 219);
 			getContentPane().add(lblNewLabel);
 			
 			JLabel lblNewLabel_1 = new JLabel("State Name");
 			lblNewLabel_1.setFont(new Font("Big Caslon", Font.BOLD, 40));
 			lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
-			lblNewLabel_1.setBounds(209, 21, 275, 55);
+			lblNewLabel_1.setBounds(349, 22, 275, 55);
 			getContentPane().add(lblNewLabel_1);
 			
 			JLabel lblCases = new JLabel("# Cases: ");
-			lblCases.setBounds(305, 88, 112, 16);
+			lblCases.setBounds(400, 88, 112, 16);
 			getContentPane().add(lblCases);
 			
 			JLabel lblNewLabel_2 = new JLabel("# Dead:");
-			lblNewLabel_2.setBounds(414, 88, 96, 16);
+			lblNewLabel_2.setBounds(600, 88, 96, 16);
 			getContentPane().add(lblNewLabel_2);
 			
 			JLabel lblNewLabel_3 = new JLabel("# Recovered:");
-			lblNewLabel_3.setBounds(522, 88, 138, 16);
+			lblNewLabel_3.setBounds(789, 88, 138, 16);
 			getContentPane().add(lblNewLabel_3);
 			
 			JLabel lblOfPop = new JLabel("% of Pop > 80:");
-			lblOfPop.setBounds(305, 129, 126, 16);
+			lblOfPop.setBounds(400, 177, 126, 16);
 			getContentPane().add(lblOfPop);
 			
 			JLabel lblOfPop_1 = new JLabel("% of Pop 40 - 60:");
-			lblOfPop_1.setBounds(305, 167, 138, 16);
+			lblOfPop_1.setBounds(602, 177, 138, 16);
 			getContentPane().add(lblOfPop_1);
 			
 			JLabel lblOfPop_2 = new JLabel("% of Pop < 40:");
-			lblOfPop_2.setBounds(305, 207, 115, 16);
+			lblOfPop_2.setBounds(791, 177, 115, 16);
 			getContentPane().add(lblOfPop_2);
 			
 			JLabel lblNewLabel_4 = new JLabel("Population Density:");
-			lblNewLabel_4.setBounds(305, 250, 163, 16);
+			lblNewLabel_4.setBounds(400, 265, 163, 16);
 			getContentPane().add(lblNewLabel_4);
 			
 			JTextArea txtrMajorEducationalInstitutions = new JTextArea();
 			txtrMajorEducationalInstitutions.setText("Major Educational Institutions Closed: ");
-			txtrMajorEducationalInstitutions.setBounds(37, 278, 623, 39);
+			txtrMajorEducationalInstitutions.setBounds(37, 330, 890, 102);
 			getContentPane().add(txtrMajorEducationalInstitutions);
 			
 			JTextArea txtrCorporationsAtRisk = new JTextArea();
 			txtrCorporationsAtRisk.setText("Corporations At Risk:");
-			txtrCorporationsAtRisk.setBounds(37, 329, 624, 39);
+			txtrCorporationsAtRisk.setBounds(36, 467, 891, 102);
 			getContentPane().add(txtrCorporationsAtRisk);
 			
 			JTextArea txtrPreventionPolicies = new JTextArea();
 			txtrPreventionPolicies.setText("Prevention Policies:");
-			txtrPreventionPolicies.setBounds(37, 380, 623, 43);
+			txtrPreventionPolicies.setBounds(38, 599, 889, 86);
 			getContentPane().add(txtrPreventionPolicies);
 			
 		}
