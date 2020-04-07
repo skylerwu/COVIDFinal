@@ -10,19 +10,20 @@ import org.jfree.data.general.PieDataset;
 import org.jfree.ui.ApplicationFrame;
 import org.jfree.ui.RefineryUtilities;
  
-public class PieChart_AWT extends ApplicationFrame {
+public class COVIDPieChartTest extends ApplicationFrame {
    
-   public PieChart_AWT( String title ) {
+   public COVIDPieChartTest( String title ) {
       super( title ); 
       setContentPane(createDemoPanel( ));
    }
    
+   //Data is completely made up. DO NOT ACTUALLY USE!
    private static PieDataset createDataset( ) {
       DefaultPieDataset dataset = new DefaultPieDataset( );
-      dataset.setValue( "New York" , new Double( 40 ) );  
-      dataset.setValue( "California" , new Double( 20 ) );   
-      dataset.setValue( "Washington" , new Double( 20 ) );    
-      dataset.setValue( "Other States" , new Double( 10 ) );  
+      dataset.setValue( "New York" , 40);  
+      dataset.setValue( "California" , 20);   
+      dataset.setValue( "Washington" , 20);    
+      dataset.setValue( "Other States" , 10);  
       return dataset;         
    }
    
@@ -43,7 +44,7 @@ public class PieChart_AWT extends ApplicationFrame {
    }
 
    public static void main( String[ ] args ) {
-      PieChart_AWT demo = new PieChart_AWT( "Distribution of COVID-19 Cases" );  
+      COVIDPieChartTest demo = new COVIDPieChartTest( "Distribution of COVID-19 Cases" );  
       demo.setSize( 560 , 367 );    
       RefineryUtilities.centerFrameOnScreen( demo );    
       demo.setVisible( true ); 
