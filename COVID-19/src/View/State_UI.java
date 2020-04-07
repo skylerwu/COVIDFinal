@@ -37,11 +37,11 @@ public class State_UI extends JFrame {
 		}
 		
 		public State_UI() {
-			getContentPane().setBackground(new Color(175, 238, 238));
+			getContentPane().setBackground(new Color(135, 206, 250));
 			getContentPane().setLayout(null);
 			
 			setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-			setBounds(100, 100, 685, 459);
+			setBounds(100, 100, 685, 474);
 			
 			JLabel lblNewLabel_5 = new JLabel("CDC Logo");
 			lblNewLabel_5.setHorizontalAlignment(SwingConstants.CENTER);
@@ -85,7 +85,7 @@ public class State_UI extends JFrame {
 			getContentPane().add(lblOfPop_2);
 			
 			JLabel lblNewLabel_4 = new JLabel("Population Density:");
-			lblNewLabel_4.setBounds(305, 250, 163, 16);
+			lblNewLabel_4.setBounds(305, 240, 163, 16);
 			getContentPane().add(lblNewLabel_4);
 			
 			JTextArea txtrMajorEducationalInstitutions = new JTextArea();
