@@ -11,6 +11,8 @@ import org.jfree.ui.ApplicationFrame;
 import org.jfree.ui.RefineryUtilities;
  
 public class COVIDPieChartTest extends ApplicationFrame {
+	
+	private static JFreeChart chart;
    
    public COVIDPieChartTest( String title ) {
       super( title ); 
@@ -39,8 +41,13 @@ public class COVIDPieChartTest extends ApplicationFrame {
    }
    
    public static JPanel createDemoPanel( ) {
-      JFreeChart chart = createChart(createDataset( ) );  
+      chart = createChart(createDataset( ) );  
       return new ChartPanel( chart ); 
+   }
+   
+   public static JFreeChart getChart( )
+   {
+	   return chart;
    }
 
    public static void main( String[ ] args ) {
