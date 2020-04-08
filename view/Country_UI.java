@@ -68,7 +68,6 @@ public class Country_UI extends JFrame {
 			getContentPane().add(lblNewLabel_1);
 			COVIDPieChartTest chart = new COVIDPieChartTest("Distribution of COVID-19 Cases");
 
-
 			JLabel lblNewLabel = new JLabel("US Map");
 			lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 			lblNewLabel.setBounds(875, 531, 306, 225);
@@ -110,14 +109,11 @@ public class Country_UI extends JFrame {
 			panel.setBounds(300, 400, 560, 367);
 
 			getContentPane().add(panel);
-			
-			//COVIDPieChartTest chart = new COVIDPieChartTest("Distribution of COVID-19 Cases");
+
 			
 			ChartPanel chPanel = new ChartPanel(chart.getChart());
 			panel.add(chPanel);
-			
 			chPanel.setPreferredSize(new Dimension(560, 367)); //size according to my window
-			
 			chPanel.setMouseWheelEnabled(true);
 			
 			JLabel lblMostDeaths = new JLabel("Most Deaths By State");
