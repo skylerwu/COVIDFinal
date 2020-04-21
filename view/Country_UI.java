@@ -13,6 +13,11 @@ import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import javax.swing.SwingConstants;
 import org.jfree.ui.RefineryUtilities;
+
+import Control.SearchMain;
+import Model.Product.PRODUCT_TYPE;
+import View.Generic_UI;
+
 import javax.swing.JButton;
 import java.awt.List;
 import java.awt.event.ActionListener;
@@ -21,6 +26,7 @@ import java.awt.event.ActionEvent;
 import java.awt.Font;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
+import javax.swing.JTextField;
 import javax.swing.JTextPane;
 import javax.swing.JPanel;
 import java.awt.image.*;
@@ -225,6 +231,21 @@ public class Country_UI extends JFrame {
 			lblNewLabel_2_9.setFont(new Font("Tahoma", Font.PLAIN, 24));
 			lblNewLabel_2_9.setBounds(55, 447, 69, 20);
 			getContentPane().add(lblNewLabel_2_9);
+			
+			JTextField txtSearchForA = new JTextField();
+			txtSearchForA.setForeground(new Color(34, 139, 34));
+			txtSearchForA.setFont(new Font("Big Caslon", Font.PLAIN, 16));
+			txtSearchForA.setText("Search for a State:");
+			txtSearchForA.setBounds(329, 22, 266, 39);
+			getContentPane().add(txtSearchForA);
+			txtSearchForA.setColumns(10);
+			
+			JButton btnSearch = new JButton("Search");
+			btnSearch.setFont(new Font("Big Caslon", Font.BOLD, 16));
+			btnSearch.setForeground(new Color(34, 139, 34));
+			btnSearch.setBounds(753, 22, 117, 39);
+			getContentPane().add(btnSearch);
+
 			
 		}
 }
