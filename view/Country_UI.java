@@ -70,7 +70,7 @@ public class Country_UI extends JFrame {
 			JLabel lblNewLabel_1 = new JLabel("CDC Covid-19 Case Database");
 			lblNewLabel_1.setFont(new Font("Big Caslon", Font.BOLD, 40));
 			lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
-			lblNewLabel_1.setBounds(300, 29, 560, 55);
+			lblNewLabel_1.setBounds(300, 27, 560, 55);
 			getContentPane().add(lblNewLabel_1);
 			COVIDPieChartTest chart = new COVIDPieChartTest("Distribution of COVID-19 Cases");
 
@@ -233,17 +233,17 @@ public class Country_UI extends JFrame {
 			getContentPane().add(lblNewLabel_2_9);
 			
 			JTextField txtSearchForA = new JTextField();
-			txtSearchForA.setForeground(new Color(34, 139, 34));
+			txtSearchForA.setForeground(Color.BLACK);
 			txtSearchForA.setFont(new Font("Big Caslon", Font.PLAIN, 16));
 			txtSearchForA.setText("Search for a State:");
-			txtSearchForA.setBounds(329, 22, 266, 39);
+			txtSearchForA.setBounds(910, 15, 266, 39);
 			getContentPane().add(txtSearchForA);
 			txtSearchForA.setColumns(10);
 			
 			JButton btnSearch = new JButton("Search");
 			btnSearch.setFont(new Font("Big Caslon", Font.BOLD, 16));
-			btnSearch.setForeground(new Color(34, 139, 34));
-			btnSearch.setBounds(753, 22, 117, 39);
+			btnSearch.setForeground(Color.BLACK);
+			btnSearch.setBounds(1184, 16, 117, 39);
 			getContentPane().add(btnSearch);
 
 			
