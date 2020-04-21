@@ -13,6 +13,11 @@ import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import javax.swing.SwingConstants;
 import org.jfree.ui.RefineryUtilities;
+
+import Control.SearchMain;
+import Model.Product.PRODUCT_TYPE;
+import View.Generic_UI;
+
 import javax.swing.JButton;
 import java.awt.List;
 import java.awt.event.ActionListener;
@@ -21,6 +26,7 @@ import java.awt.event.ActionEvent;
 import java.awt.Font;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
+import javax.swing.JTextField;
 import javax.swing.JTextPane;
 import javax.swing.JPanel;
 import java.awt.image.*;
@@ -64,7 +70,7 @@ public class Country_UI extends JFrame {
 			JLabel lblNewLabel_1 = new JLabel("CDC Covid-19 Case Database");
 			lblNewLabel_1.setFont(new Font("Big Caslon", Font.BOLD, 40));
 			lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
-			lblNewLabel_1.setBounds(300, 29, 560, 55);
+			lblNewLabel_1.setBounds(300, 27, 560, 55);
 			getContentPane().add(lblNewLabel_1);
 			COVIDPieChartTest chart = new COVIDPieChartTest("Distribution of COVID-19 Cases");
 
@@ -225,6 +231,21 @@ public class Country_UI extends JFrame {
 			lblNewLabel_2_9.setFont(new Font("Tahoma", Font.PLAIN, 24));
 			lblNewLabel_2_9.setBounds(55, 447, 69, 20);
 			getContentPane().add(lblNewLabel_2_9);
+			
+			JTextField txtSearchForA = new JTextField();
+			txtSearchForA.setForeground(Color.BLACK);
+			txtSearchForA.setFont(new Font("Big Caslon", Font.PLAIN, 16));
+			txtSearchForA.setText("Search for a State:");
+			txtSearchForA.setBounds(910, 15, 266, 39);
+			getContentPane().add(txtSearchForA);
+			txtSearchForA.setColumns(10);
+			
+			JButton btnSearch = new JButton("Search");
+			btnSearch.setFont(new Font("Big Caslon", Font.BOLD, 16));
+			btnSearch.setForeground(Color.BLACK);
+			btnSearch.setBounds(1184, 16, 117, 39);
+			getContentPane().add(btnSearch);
+
 			
 		}
 }

@@ -45,7 +45,7 @@ public class State_UI extends JFrame {
 			
 			JLabel lblNewLabel_5 = new JLabel("CDC Logo");
 			lblNewLabel_5.setHorizontalAlignment(SwingConstants.CENTER);
-			lblNewLabel_5.setBounds(16, 11, 77, 74);
+			lblNewLabel_5.setBounds(37, 30, 77, 74);
 			getContentPane().add(lblNewLabel_5);
 			lblNewLabel_5.setIcon(new ImageIcon("CDC.png"));
 			
