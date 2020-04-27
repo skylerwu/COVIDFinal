@@ -14,10 +14,6 @@ import javax.swing.JMenuItem;
 import javax.swing.SwingConstants;
 import org.jfree.ui.RefineryUtilities;
 
-import Control.SearchMain;
-import Model.Product.PRODUCT_TYPE;
-import View.Generic_UI;
-
 import javax.swing.JButton;
 import java.awt.List;
 import java.awt.event.ActionListener;
