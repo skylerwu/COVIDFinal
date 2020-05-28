@@ -1,0 +1,215 @@
+{
+  "build": "py36_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-64",
+  "constrains": [],
+  "depends": [
+    "cryptography >=2.8",
+    "python >=3.6,<3.7.0a0",
+    "six >=1.5.2"
+  ],
+  "extracted_package_dir": "/Users/allenyang/opt/anaconda3/pkgs/pyopenssl-19.1.0-py36_0",
+  "features": "",
+  "files": [
+    "lib/python3.6/site-packages/OpenSSL/SSL.py",
+    "lib/python3.6/site-packages/OpenSSL/__init__.py",
+    "lib/python3.6/site-packages/OpenSSL/__pycache__/SSL.cpython-36.pyc",
+    "lib/python3.6/site-packages/OpenSSL/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/OpenSSL/__pycache__/_util.cpython-36.pyc",
+    "lib/python3.6/site-packages/OpenSSL/__pycache__/crypto.cpython-36.pyc",
+    "lib/python3.6/site-packages/OpenSSL/__pycache__/debug.cpython-36.pyc",
+    "lib/python3.6/site-packages/OpenSSL/__pycache__/rand.cpython-36.pyc",
+    "lib/python3.6/site-packages/OpenSSL/__pycache__/tsafe.cpython-36.pyc",
+    "lib/python3.6/site-packages/OpenSSL/__pycache__/version.cpython-36.pyc",
+    "lib/python3.6/site-packages/OpenSSL/_util.py",
+    "lib/python3.6/site-packages/OpenSSL/crypto.py",
+    "lib/python3.6/site-packages/OpenSSL/debug.py",
+    "lib/python3.6/site-packages/OpenSSL/rand.py",
+    "lib/python3.6/site-packages/OpenSSL/tsafe.py",
+    "lib/python3.6/site-packages/OpenSSL/version.py",
+    "lib/python3.6/site-packages/pyOpenSSL-19.1.0.dist-info/INSTALLER",
+    "lib/python3.6/site-packages/pyOpenSSL-19.1.0.dist-info/LICENSE",
+    "lib/python3.6/site-packages/pyOpenSSL-19.1.0.dist-info/METADATA",
+    "lib/python3.6/site-packages/pyOpenSSL-19.1.0.dist-info/RECORD",
+    "lib/python3.6/site-packages/pyOpenSSL-19.1.0.dist-info/WHEEL",
+    "lib/python3.6/site-packages/pyOpenSSL-19.1.0.dist-info/top_level.txt"
+  ],
+  "fn": "pyopenssl-19.1.0-py36_0.conda",
+  "legacy_bz2_md5": "c89b9fc953234a4d4b08b502f07bfd9d",
+  "license": "Apache 2.0",
+  "license_family": "Apache",
+  "link": {
+    "source": "/Users/allenyang/opt/anaconda3/pkgs/pyopenssl-19.1.0-py36_0",
+    "type": 1
+  },
+  "md5": "ab13ab6c691e5f669dfb029788114048",
+  "name": "pyopenssl",
+  "package_tarball_full_path": "/Users/allenyang/opt/anaconda3/pkgs/pyopenssl-19.1.0-py36_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.6/site-packages/OpenSSL/SSL.py",
+        "path_type": "hardlink",
+        "sha256": "b20b06951ea754858b1dfdc61e0ddd241155ebfa6c4f3c828c041cb81701bbe6",
+        "sha256_in_prefix": "b20b06951ea754858b1dfdc61e0ddd241155ebfa6c4f3c828c041cb81701bbe6",
+        "size_in_bytes": 89600
+      },
+      {
+        "_path": "lib/python3.6/site-packages/OpenSSL/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "d51e693b5c8d89381186ddae579ac485bb2fef34d2592ed00fd8d5f129871908",
+        "sha256_in_prefix": "d51e693b5c8d89381186ddae579ac485bb2fef34d2592ed00fd8d5f129871908",
+        "size_in_bytes": 447
+      },
+      {
+        "_path": "lib/python3.6/site-packages/OpenSSL/__pycache__/SSL.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "9b51c997c1cb61a1f237d05ab8551ae882e409341def836dcf95926917af5ffd",
+        "sha256_in_prefix": "9b51c997c1cb61a1f237d05ab8551ae882e409341def836dcf95926917af5ffd",
+        "size_in_bytes": 78018
+      },
+      {
+        "_path": "lib/python3.6/site-packages/OpenSSL/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "a45415b9f79822679f926469927b690fffe4a28e0b5450c79e96084d2b8c2553",
+        "sha256_in_prefix": "a45415b9f79822679f926469927b690fffe4a28e0b5450c79e96084d2b8c2553",
+        "size_in_bytes": 543
+      },
+      {
+        "_path": "lib/python3.6/site-packages/OpenSSL/__pycache__/_util.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "e2fc1d20ea786af694915f11d1157f250f30ea00d344ecb28dc9e644ace61934",
+        "sha256_in_prefix": "e2fc1d20ea786af694915f11d1157f250f30ea00d344ecb28dc9e644ace61934",
+        "size_in_bytes": 4426
+      },
+      {
+        "_path": "lib/python3.6/site-packages/OpenSSL/__pycache__/crypto.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "49d3370b305a9fdd8ec513ca3750728a5c7ddebb075e8a2963c2222e581bfb14",
+        "sha256_in_prefix": "49d3370b305a9fdd8ec513ca3750728a5c7ddebb075e8a2963c2222e581bfb14",
+        "size_in_bytes": 89081
+      },
+      {
+        "_path": "lib/python3.6/site-packages/OpenSSL/__pycache__/debug.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "9e1aa43783e623ee9bcb0ebb81fc00ae08b78c6092a78604443897820d4bc1ea",
+        "sha256_in_prefix": "9e1aa43783e623ee9bcb0ebb81fc00ae08b78c6092a78604443897820d4bc1ea",
+        "size_in_bytes": 1124
+      },
+      {
+        "_path": "lib/python3.6/site-packages/OpenSSL/__pycache__/rand.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "a4ca3a5b35bdfeb97fc044eb42c38ff64660f2ae9abde5c0b2d3ea455e6bf565",
+        "sha256_in_prefix": "a4ca3a5b35bdfeb97fc044eb42c38ff64660f2ae9abde5c0b2d3ea455e6bf565",
+        "size_in_bytes": 1257
+      },
+      {
+        "_path": "lib/python3.6/site-packages/OpenSSL/__pycache__/tsafe.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "4ba2407cabb12dfc3422a3ed0e46cb6fff6fdb6f7d07245105bde2e2839678d2",
+        "sha256_in_prefix": "4ba2407cabb12dfc3422a3ed0e46cb6fff6fdb6f7d07245105bde2e2839678d2",
+        "size_in_bytes": 1470
+      },
+      {
+        "_path": "lib/python3.6/site-packages/OpenSSL/__pycache__/version.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "8fd2829b43410c3e2629881bd09df5129f327b444b20bc81d05051dc484df91f",
+        "sha256_in_prefix": "8fd2829b43410c3e2629881bd09df5129f327b444b20bc81d05051dc484df91f",
+        "size_in_bytes": 632
+      },
+      {
+        "_path": "lib/python3.6/site-packages/OpenSSL/_util.py",
+        "path_type": "hardlink",
+        "sha256": "5420ce19b4d262e669d9d8e13df50c4038daa838b4986c03fccd63e323ab8a44",
+        "sha256_in_prefix": "5420ce19b4d262e669d9d8e13df50c4038daa838b4986c03fccd63e323ab8a44",
+        "size_in_bytes": 4528
+      },
+      {
+        "_path": "lib/python3.6/site-packages/OpenSSL/crypto.py",
+        "path_type": "hardlink",
+        "sha256": "d5e9c04fe53a093cdb13e2b240d24587cba503283e7cab192ca1ddea139b605c",
+        "sha256_in_prefix": "d5e9c04fe53a093cdb13e2b240d24587cba503283e7cab192ca1ddea139b605c",
+        "size_in_bytes": 99093
+      },
+      {
+        "_path": "lib/python3.6/site-packages/OpenSSL/debug.py",
+        "path_type": "hardlink",
+        "sha256": "671e861815ea938a2ab79817ad98ce5d1aa20a7031ef210931649f0f13e0301f",
+        "sha256_in_prefix": "671e861815ea938a2ab79817ad98ce5d1aa20a7031ef210931649f0f13e0301f",
+        "size_in_bytes": 1049
+      },
+      {
+        "_path": "lib/python3.6/site-packages/OpenSSL/rand.py",
+        "path_type": "hardlink",
+        "sha256": "f421a8c744496ebadd1f52fb4a2b0441885c3a9d3282986e23cd353b36304a81",
+        "sha256_in_prefix": "f421a8c744496ebadd1f52fb4a2b0441885c3a9d3282986e23cd353b36304a81",
+        "size_in_bytes": 1042
+      },
+      {
+        "_path": "lib/python3.6/site-packages/OpenSSL/tsafe.py",
+        "path_type": "hardlink",
+        "sha256": "5a43caf3e6ae05091798d2acf00029ea904ce8db03bb1950d0229599a31a9c82",
+        "sha256_in_prefix": "5a43caf3e6ae05091798d2acf00029ea904ce8db03bb1950d0229599a31a9c82",
+        "size_in_bytes": 1102
+      },
+      {
+        "_path": "lib/python3.6/site-packages/OpenSSL/version.py",
+        "path_type": "hardlink",
+        "sha256": "72af7e89a1d6a4cbf9527af76106bca45658432fe66d09565085884118fd5c3e",
+        "sha256_in_prefix": "72af7e89a1d6a4cbf9527af76106bca45658432fe66d09565085884118fd5c3e",
+        "size_in_bytes": 626
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyOpenSSL-19.1.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyOpenSSL-19.1.0.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "sha256_in_prefix": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "size_in_bytes": 11358
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyOpenSSL-19.1.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "8e9128557155852b716daecfe1f2297979210f34e57890566f12e91d64fcecd3",
+        "sha256_in_prefix": "8e9128557155852b716daecfe1f2297979210f34e57890566f12e91d64fcecd3",
+        "size_in_bytes": 4729
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyOpenSSL-19.1.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "4ddc98040d5748816a4fdfcb32ba9b697bfeaabd926a546f627bb51208104e78",
+        "sha256_in_prefix": "4ddc98040d5748816a4fdfcb32ba9b697bfeaabd926a546f627bb51208104e78",
+        "size_in_bytes": 1448
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyOpenSSL-19.1.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "f3335865bc10497a01f487d73a33df78dc2f02c00b0237df824dbb16abc259ba",
+        "sha256_in_prefix": "f3335865bc10497a01f487d73a33df78dc2f02c00b0237df824dbb16abc259ba",
+        "size_in_bytes": 110
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyOpenSSL-19.1.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "34dc56a92f2128d261d9c5176b545938c5fad9525fc9df14468d53b189d1fcc5",
+        "sha256_in_prefix": "34dc56a92f2128d261d9c5176b545938c5fad9525fc9df14468d53b189d1fcc5",
+        "size_in_bytes": 8
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "94a0f38093d003254f2c6c4435e9e3e5f0d077e6a056a4b66010edcef9991758",
+  "size": 88780,
+  "subdir": "osx-64",
+  "timestamp": 1574266656361,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-64/pyopenssl-19.1.0-py36_0.conda",
+  "version": "19.1.0"
+}

@@ -1,0 +1,1502 @@
+{
+  "build": "py36h1de35cc_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.6,<3.7.0a0",
+    "urllib3"
+  ],
+  "extracted_package_dir": "/Users/allenyang/opt/anaconda3/pkgs/selenium-3.141.0-py36h1de35cc_0",
+  "features": "",
+  "files": [
+    "lib/python3.6/site-packages/selenium-3.141.0-py3.6.egg-info/PKG-INFO",
+    "lib/python3.6/site-packages/selenium-3.141.0-py3.6.egg-info/SOURCES.txt",
+    "lib/python3.6/site-packages/selenium-3.141.0-py3.6.egg-info/dependency_links.txt",
+    "lib/python3.6/site-packages/selenium-3.141.0-py3.6.egg-info/installed-files.txt",
+    "lib/python3.6/site-packages/selenium-3.141.0-py3.6.egg-info/not-zip-safe",
+    "lib/python3.6/site-packages/selenium-3.141.0-py3.6.egg-info/requires.txt",
+    "lib/python3.6/site-packages/selenium-3.141.0-py3.6.egg-info/top_level.txt",
+    "lib/python3.6/site-packages/selenium/__init__.py",
+    "lib/python3.6/site-packages/selenium/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/common/__init__.py",
+    "lib/python3.6/site-packages/selenium/common/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/common/__pycache__/exceptions.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/common/exceptions.py",
+    "lib/python3.6/site-packages/selenium/webdriver/__init__.py",
+    "lib/python3.6/site-packages/selenium/webdriver/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/android/__init__.py",
+    "lib/python3.6/site-packages/selenium/webdriver/android/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/android/__pycache__/webdriver.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/android/webdriver.py",
+    "lib/python3.6/site-packages/selenium/webdriver/blackberry/__init__.py",
+    "lib/python3.6/site-packages/selenium/webdriver/blackberry/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/blackberry/__pycache__/webdriver.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/blackberry/webdriver.py",
+    "lib/python3.6/site-packages/selenium/webdriver/chrome/__init__.py",
+    "lib/python3.6/site-packages/selenium/webdriver/chrome/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/chrome/__pycache__/options.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/chrome/__pycache__/remote_connection.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/chrome/__pycache__/service.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/chrome/__pycache__/webdriver.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/chrome/options.py",
+    "lib/python3.6/site-packages/selenium/webdriver/chrome/remote_connection.py",
+    "lib/python3.6/site-packages/selenium/webdriver/chrome/service.py",
+    "lib/python3.6/site-packages/selenium/webdriver/chrome/webdriver.py",
+    "lib/python3.6/site-packages/selenium/webdriver/common/__init__.py",
+    "lib/python3.6/site-packages/selenium/webdriver/common/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/common/__pycache__/action_chains.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/common/__pycache__/alert.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/common/__pycache__/by.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/common/__pycache__/desired_capabilities.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/common/__pycache__/keys.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/common/__pycache__/proxy.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/common/__pycache__/service.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/common/__pycache__/touch_actions.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/common/__pycache__/utils.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/common/action_chains.py",
+    "lib/python3.6/site-packages/selenium/webdriver/common/actions/__init__.py",
+    "lib/python3.6/site-packages/selenium/webdriver/common/actions/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/common/actions/__pycache__/action_builder.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/common/actions/__pycache__/input_device.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/common/actions/__pycache__/interaction.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/common/actions/__pycache__/key_actions.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/common/actions/__pycache__/key_input.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/common/actions/__pycache__/mouse_button.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/common/actions/__pycache__/pointer_actions.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/common/actions/__pycache__/pointer_input.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/common/actions/action_builder.py",
+    "lib/python3.6/site-packages/selenium/webdriver/common/actions/input_device.py",
+    "lib/python3.6/site-packages/selenium/webdriver/common/actions/interaction.py",
+    "lib/python3.6/site-packages/selenium/webdriver/common/actions/key_actions.py",
+    "lib/python3.6/site-packages/selenium/webdriver/common/actions/key_input.py",
+    "lib/python3.6/site-packages/selenium/webdriver/common/actions/mouse_button.py",
+    "lib/python3.6/site-packages/selenium/webdriver/common/actions/pointer_actions.py",
+    "lib/python3.6/site-packages/selenium/webdriver/common/actions/pointer_input.py",
+    "lib/python3.6/site-packages/selenium/webdriver/common/alert.py",
+    "lib/python3.6/site-packages/selenium/webdriver/common/by.py",
+    "lib/python3.6/site-packages/selenium/webdriver/common/desired_capabilities.py",
+    "lib/python3.6/site-packages/selenium/webdriver/common/html5/__init__.py",
+    "lib/python3.6/site-packages/selenium/webdriver/common/html5/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/common/html5/__pycache__/application_cache.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/common/html5/application_cache.py",
+    "lib/python3.6/site-packages/selenium/webdriver/common/keys.py",
+    "lib/python3.6/site-packages/selenium/webdriver/common/proxy.py",
+    "lib/python3.6/site-packages/selenium/webdriver/common/service.py",
+    "lib/python3.6/site-packages/selenium/webdriver/common/touch_actions.py",
+    "lib/python3.6/site-packages/selenium/webdriver/common/utils.py",
+    "lib/python3.6/site-packages/selenium/webdriver/edge/__init__.py",
+    "lib/python3.6/site-packages/selenium/webdriver/edge/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/edge/__pycache__/options.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/edge/__pycache__/service.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/edge/__pycache__/webdriver.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/edge/options.py",
+    "lib/python3.6/site-packages/selenium/webdriver/edge/service.py",
+    "lib/python3.6/site-packages/selenium/webdriver/edge/webdriver.py",
+    "lib/python3.6/site-packages/selenium/webdriver/firefox/__init__.py",
+    "lib/python3.6/site-packages/selenium/webdriver/firefox/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/firefox/__pycache__/extension_connection.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/firefox/__pycache__/firefox_binary.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/firefox/__pycache__/firefox_profile.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/firefox/__pycache__/options.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/firefox/__pycache__/remote_connection.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/firefox/__pycache__/service.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/firefox/__pycache__/webdriver.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/firefox/__pycache__/webelement.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/firefox/amd64/x_ignore_nofocus.so",
+    "lib/python3.6/site-packages/selenium/webdriver/firefox/extension_connection.py",
+    "lib/python3.6/site-packages/selenium/webdriver/firefox/firefox_binary.py",
+    "lib/python3.6/site-packages/selenium/webdriver/firefox/firefox_profile.py",
+    "lib/python3.6/site-packages/selenium/webdriver/firefox/options.py",
+    "lib/python3.6/site-packages/selenium/webdriver/firefox/remote_connection.py",
+    "lib/python3.6/site-packages/selenium/webdriver/firefox/service.py",
+    "lib/python3.6/site-packages/selenium/webdriver/firefox/webdriver.py",
+    "lib/python3.6/site-packages/selenium/webdriver/firefox/webdriver.xpi",
+    "lib/python3.6/site-packages/selenium/webdriver/firefox/webdriver_prefs.json",
+    "lib/python3.6/site-packages/selenium/webdriver/firefox/webelement.py",
+    "lib/python3.6/site-packages/selenium/webdriver/firefox/x86/x_ignore_nofocus.so",
+    "lib/python3.6/site-packages/selenium/webdriver/ie/__init__.py",
+    "lib/python3.6/site-packages/selenium/webdriver/ie/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/ie/__pycache__/options.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/ie/__pycache__/service.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/ie/__pycache__/webdriver.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/ie/options.py",
+    "lib/python3.6/site-packages/selenium/webdriver/ie/service.py",
+    "lib/python3.6/site-packages/selenium/webdriver/ie/webdriver.py",
+    "lib/python3.6/site-packages/selenium/webdriver/opera/__init__.py",
+    "lib/python3.6/site-packages/selenium/webdriver/opera/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/opera/__pycache__/options.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/opera/__pycache__/webdriver.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/opera/options.py",
+    "lib/python3.6/site-packages/selenium/webdriver/opera/webdriver.py",
+    "lib/python3.6/site-packages/selenium/webdriver/phantomjs/__init__.py",
+    "lib/python3.6/site-packages/selenium/webdriver/phantomjs/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/phantomjs/__pycache__/service.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/phantomjs/__pycache__/webdriver.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/phantomjs/service.py",
+    "lib/python3.6/site-packages/selenium/webdriver/phantomjs/webdriver.py",
+    "lib/python3.6/site-packages/selenium/webdriver/remote/__init__.py",
+    "lib/python3.6/site-packages/selenium/webdriver/remote/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/remote/__pycache__/command.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/remote/__pycache__/errorhandler.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/remote/__pycache__/file_detector.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/remote/__pycache__/mobile.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/remote/__pycache__/remote_connection.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/remote/__pycache__/switch_to.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/remote/__pycache__/utils.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/remote/__pycache__/webdriver.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/remote/__pycache__/webelement.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/remote/command.py",
+    "lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py",
+    "lib/python3.6/site-packages/selenium/webdriver/remote/file_detector.py",
+    "lib/python3.6/site-packages/selenium/webdriver/remote/getAttribute.js",
+    "lib/python3.6/site-packages/selenium/webdriver/remote/isDisplayed.js",
+    "lib/python3.6/site-packages/selenium/webdriver/remote/mobile.py",
+    "lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py",
+    "lib/python3.6/site-packages/selenium/webdriver/remote/switch_to.py",
+    "lib/python3.6/site-packages/selenium/webdriver/remote/utils.py",
+    "lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py",
+    "lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py",
+    "lib/python3.6/site-packages/selenium/webdriver/safari/__init__.py",
+    "lib/python3.6/site-packages/selenium/webdriver/safari/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/safari/__pycache__/permissions.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/safari/__pycache__/remote_connection.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/safari/__pycache__/service.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/safari/__pycache__/webdriver.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/safari/permissions.py",
+    "lib/python3.6/site-packages/selenium/webdriver/safari/remote_connection.py",
+    "lib/python3.6/site-packages/selenium/webdriver/safari/service.py",
+    "lib/python3.6/site-packages/selenium/webdriver/safari/webdriver.py",
+    "lib/python3.6/site-packages/selenium/webdriver/support/__init__.py",
+    "lib/python3.6/site-packages/selenium/webdriver/support/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/support/__pycache__/abstract_event_listener.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/support/__pycache__/color.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/support/__pycache__/event_firing_webdriver.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/support/__pycache__/events.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/support/__pycache__/expected_conditions.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/support/__pycache__/select.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/support/__pycache__/ui.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/support/__pycache__/wait.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/support/abstract_event_listener.py",
+    "lib/python3.6/site-packages/selenium/webdriver/support/color.py",
+    "lib/python3.6/site-packages/selenium/webdriver/support/event_firing_webdriver.py",
+    "lib/python3.6/site-packages/selenium/webdriver/support/events.py",
+    "lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py",
+    "lib/python3.6/site-packages/selenium/webdriver/support/select.py",
+    "lib/python3.6/site-packages/selenium/webdriver/support/ui.py",
+    "lib/python3.6/site-packages/selenium/webdriver/support/wait.py",
+    "lib/python3.6/site-packages/selenium/webdriver/webkitgtk/__init__.py",
+    "lib/python3.6/site-packages/selenium/webdriver/webkitgtk/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/webkitgtk/__pycache__/options.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/webkitgtk/__pycache__/service.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/webkitgtk/__pycache__/webdriver.cpython-36.pyc",
+    "lib/python3.6/site-packages/selenium/webdriver/webkitgtk/options.py",
+    "lib/python3.6/site-packages/selenium/webdriver/webkitgtk/service.py",
+    "lib/python3.6/site-packages/selenium/webdriver/webkitgtk/webdriver.py"
+  ],
+  "fn": "selenium-3.141.0-py36h1de35cc_0.conda",
+  "legacy_bz2_md5": "6f16638e971f235059c57c59d7dd92c2",
+  "license": "Apache 2.0",
+  "license_family": "Apache",
+  "link": {
+    "source": "/Users/allenyang/opt/anaconda3/pkgs/selenium-3.141.0-py36h1de35cc_0",
+    "type": 1
+  },
+  "md5": "2501db6bab20cb8b6ddcb9760472e5e1",
+  "name": "selenium",
+  "package_tarball_full_path": "/Users/allenyang/opt/anaconda3/pkgs/selenium-3.141.0-py36h1de35cc_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.6/site-packages/selenium-3.141.0-py3.6.egg-info/PKG-INFO",
+        "path_type": "hardlink",
+        "sha256": "6e57c1eec5dee8bafa0ca91f763cdfdefc51a42b236af4118bd480623235d3f0",
+        "sha256_in_prefix": "6e57c1eec5dee8bafa0ca91f763cdfdefc51a42b236af4118bd480623235d3f0",
+        "size_in_bytes": 7701
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium-3.141.0-py3.6.egg-info/SOURCES.txt",
+        "path_type": "hardlink",
+        "sha256": "f8997456da6ac8289173823016f4543a93eda8f81895d0673a416b6e18bcf462",
+        "sha256_in_prefix": "f8997456da6ac8289173823016f4543a93eda8f81895d0673a416b6e18bcf462",
+        "size_in_bytes": 3954
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium-3.141.0-py3.6.egg-info/dependency_links.txt",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium-3.141.0-py3.6.egg-info/installed-files.txt",
+        "path_type": "hardlink",
+        "sha256": "7eec388539026fff7c06032cc9ae830a5e8eccdf9428bc0897ec02013b199182",
+        "sha256_in_prefix": "7eec388539026fff7c06032cc9ae830a5e8eccdf9428bc0897ec02013b199182",
+        "size_in_bytes": 9788
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium-3.141.0-py3.6.egg-info/not-zip-safe",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium-3.141.0-py3.6.egg-info/requires.txt",
+        "path_type": "hardlink",
+        "sha256": "10c8972f6b0aad3726accc481d3a9d737113e78a50236634ef62dec4511e9afa",
+        "sha256_in_prefix": "10c8972f6b0aad3726accc481d3a9d737113e78a50236634ef62dec4511e9afa",
+        "size_in_bytes": 8
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium-3.141.0-py3.6.egg-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "87f6c7895a9206de1e6d26a594baf2228ec1905a887a1466ad696771c3d87393",
+        "sha256_in_prefix": "87f6c7895a9206de1e6d26a594baf2228ec1905a887a1466ad696771c3d87393",
+        "size_in_bytes": 9
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "8af2ab23189c37018c09590952551f312ce0941723aa9a21afba8a6f7d71ae5e",
+        "sha256_in_prefix": "8af2ab23189c37018c09590952551f312ce0941723aa9a21afba8a6f7d71ae5e",
+        "size_in_bytes": 813
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "c9f4a822414d7e8cc8012477f7446521e46c6e14b7960c6878ea0fa9c068895d",
+        "sha256_in_prefix": "c9f4a822414d7e8cc8012477f7446521e46c6e14b7960c6878ea0fa9c068895d",
+        "size_in_bytes": 154
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/common/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "13f57cf95b265acc4984e9d7667fbbdaef64fe30a0048e8f8d5ee411decff230",
+        "sha256_in_prefix": "13f57cf95b265acc4984e9d7667fbbdaef64fe30a0048e8f8d5ee411decff230",
+        "size_in_bytes": 821
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/common/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "22f75b4a21fac2c2ec99a96d142567563e27b48db680de47f4cf03316a3121f8",
+        "sha256_in_prefix": "22f75b4a21fac2c2ec99a96d142567563e27b48db680de47f4cf03316a3121f8",
+        "size_in_bytes": 173
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/common/__pycache__/exceptions.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "48725359dca51233034aea95cc889adc023cc51e2141cf0dd9c48c663397c51e",
+        "sha256_in_prefix": "48725359dca51233034aea95cc889adc023cc51e2141cf0dd9c48c663397c51e",
+        "size_in_bytes": 11656
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/common/exceptions.py",
+        "path_type": "hardlink",
+        "sha256": "274eee3febecd34a9c158b329608b5abd06d788c2a548af5c0a2117c60028822",
+        "sha256_in_prefix": "274eee3febecd34a9c158b329608b5abd06d788c2a548af5c0a2117c60028822",
+        "size_in_bytes": 9274
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "c4e4c8d15e0b2e0b53bac5c588312b44247f93b3a53dbc9b46a6e4c8c63001ea",
+        "sha256_in_prefix": "c4e4c8d15e0b2e0b53bac5c588312b44247f93b3a53dbc9b46a6e4c8c63001ea",
+        "size_in_bytes": 1981
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "bb8fc53fa5ccd9eb4443686615b9c70045b2741e8320f593d1a794991b079735",
+        "sha256_in_prefix": "bb8fc53fa5ccd9eb4443686615b9c70045b2741e8320f593d1a794991b079735",
+        "size_in_bytes": 1121
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/android/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "sha256_in_prefix": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "size_in_bytes": 787
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/android/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "6d9ee79084e18a1b1c22c4658c15b44f0a99e7841685208ef34a698f37460343",
+        "sha256_in_prefix": "6d9ee79084e18a1b1c22c4658c15b44f0a99e7841685208ef34a698f37460343",
+        "size_in_bytes": 149
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/android/__pycache__/webdriver.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "160f1566706d04abd53a3ba3b6e38231517e8ca7569a2fc688422c1efb7bf484",
+        "sha256_in_prefix": "160f1566706d04abd53a3ba3b6e38231517e8ca7569a2fc688422c1efb7bf484",
+        "size_in_bytes": 1214
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/android/webdriver.py",
+        "path_type": "hardlink",
+        "sha256": "d55cf619f600bf2508094aecf741f30f42c42d436157dbb54b1daa4f8b85395d",
+        "sha256_in_prefix": "d55cf619f600bf2508094aecf741f30f42c42d436157dbb54b1daa4f8b85395d",
+        "size_in_bytes": 1735
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/blackberry/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "sha256_in_prefix": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "size_in_bytes": 787
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/blackberry/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "e935de23c7ee7eb12be08ff4a28e3a192e6b468bc63ed253a7de53c994fc4c9a",
+        "sha256_in_prefix": "e935de23c7ee7eb12be08ff4a28e3a192e6b468bc63ed253a7de53c994fc4c9a",
+        "size_in_bytes": 152
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/blackberry/__pycache__/webdriver.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "5fd2b3bb8af013d86a2aff1f94c292497b6d830bb9b49edc5782a85717b5bca9",
+        "sha256_in_prefix": "5fd2b3bb8af013d86a2aff1f94c292497b6d830bb9b49edc5782a85717b5bca9",
+        "size_in_bytes": 3328
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/blackberry/webdriver.py",
+        "path_type": "hardlink",
+        "sha256": "924ccacffdea2c1de78a38319606e22a6a8fbac9af41d0f7450e82eda0a503e7",
+        "sha256_in_prefix": "924ccacffdea2c1de78a38319606e22a6a8fbac9af41d0f7450e82eda0a503e7",
+        "size_in_bytes": 4870
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/chrome/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "sha256_in_prefix": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "size_in_bytes": 787
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/chrome/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "3a099ea25f4b058273012d9cb7a5f1e618ff508cf158750a16317b0d4ac56f32",
+        "sha256_in_prefix": "3a099ea25f4b058273012d9cb7a5f1e618ff508cf158750a16317b0d4ac56f32",
+        "size_in_bytes": 148
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/chrome/__pycache__/options.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "5633e2b3eeb4bbe585df3a3289038c08ebb45b3fd7c43e55bf52ab624ba82dcc",
+        "sha256_in_prefix": "5633e2b3eeb4bbe585df3a3289038c08ebb45b3fd7c43e55bf52ab624ba82dcc",
+        "size_in_bytes": 5937
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/chrome/__pycache__/remote_connection.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "0a64dc229afe80cbb6ea0273627623023a135eeac005a277e46e53ba09f4b2f4",
+        "sha256_in_prefix": "0a64dc229afe80cbb6ea0273627623023a135eeac005a277e46e53ba09f4b2f4",
+        "size_in_bytes": 915
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/chrome/__pycache__/service.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "c887e2c1980da0e896d8b5d946c7902502df80042804bd5c02321a6dc1acb096",
+        "sha256_in_prefix": "c887e2c1980da0e896d8b5d946c7902502df80042804bd5c02321a6dc1acb096",
+        "size_in_bytes": 1312
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/chrome/__pycache__/webdriver.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "82e4c80e4ca93d02c93a1419895164406c9945731f653aebe75616cfacd5ed22",
+        "sha256_in_prefix": "82e4c80e4ca93d02c93a1419895164406c9945731f653aebe75616cfacd5ed22",
+        "size_in_bytes": 5085
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/chrome/options.py",
+        "path_type": "hardlink",
+        "sha256": "333373d344ed44f7b99ec46d75ff23d64ab5c18a6da7a9ccb8d744e5df4f2f44",
+        "sha256_in_prefix": "333373d344ed44f7b99ec46d75ff23d64ab5c18a6da7a9ccb8d744e5df4f2f44",
+        "size_in_bytes": 6540
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/chrome/remote_connection.py",
+        "path_type": "hardlink",
+        "sha256": "956b9737e9165546072293667e8af2dbeaf6a4527383fc7afc67da91c9ef6b80",
+        "sha256_in_prefix": "956b9737e9165546072293667e8af2dbeaf6a4527383fc7afc67da91c9ef6b80",
+        "size_in_bytes": 1447
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/chrome/service.py",
+        "path_type": "hardlink",
+        "sha256": "f578800775e5d934fce1f214290381159006cb4bbefdea4b5481387db13c47de",
+        "sha256_in_prefix": "f578800775e5d934fce1f214290381159006cb4bbefdea4b5481387db13c47de",
+        "size_in_bytes": 1817
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/chrome/webdriver.py",
+        "path_type": "hardlink",
+        "sha256": "54704d441fcbcc38b24d727986104923d19191bfd32002aebbd5f951b0d1f26c",
+        "sha256_in_prefix": "54704d441fcbcc38b24d727986104923d19191bfd32002aebbd5f951b0d1f26c",
+        "size_in_bytes": 6024
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "sha256_in_prefix": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "size_in_bytes": 787
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "27f0b085ee1c43fe62b42ed3e388cdab0a137181abf9fb5ed4ca6cb2c31a246f",
+        "sha256_in_prefix": "27f0b085ee1c43fe62b42ed3e388cdab0a137181abf9fb5ed4ca6cb2c31a246f",
+        "size_in_bytes": 148
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/__pycache__/action_chains.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "88e46c0a2b7e22c3db15251fedb60cc1edccb3f18eb5d38a8867f63c5e68bffe",
+        "sha256_in_prefix": "88e46c0a2b7e22c3db15251fedb60cc1edccb3f18eb5d38a8867f63c5e68bffe",
+        "size_in_bytes": 12274
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/__pycache__/alert.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "eaa6125af93c8cb110ed87982ae036b5ab575ca960473780edcd7f55dacb38fb",
+        "sha256_in_prefix": "eaa6125af93c8cb110ed87982ae036b5ab575ca960473780edcd7f55dacb38fb",
+        "size_in_bytes": 2601
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/__pycache__/by.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "3eba0477b9c4147d1cf3a35e60ab8d101e47cd6adb67c6043a0f811933ce771e",
+        "sha256_in_prefix": "3eba0477b9c4147d1cf3a35e60ab8d101e47cd6adb67c6043a0f811933ce771e",
+        "size_in_bytes": 604
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/__pycache__/desired_capabilities.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "face7cf040799c693621f6a31818cf890d8c0b9f9bf2d279c70f8d1f6c39b1ce",
+        "sha256_in_prefix": "face7cf040799c693621f6a31818cf890d8c0b9f9bf2d279c70f8d1f6c39b1ce",
+        "size_in_bytes": 1944
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/__pycache__/keys.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "1380fb6526cfa9f874b4dbbed6b67a0264014dfa8452a7c358932532d128d1d3",
+        "sha256_in_prefix": "1380fb6526cfa9f874b4dbbed6b67a0264014dfa8452a7c358932532d128d1d3",
+        "size_in_bytes": 1760
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/__pycache__/proxy.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "f513cf50e9873475d17738d971dfc8d95d909b569ccdaf743082bf92e237d48e",
+        "sha256_in_prefix": "f513cf50e9873475d17738d971dfc8d95d909b569ccdaf743082bf92e237d48e",
+        "size_in_bytes": 8006
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/__pycache__/service.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "5f531069471465a10b269ad3b35ea6e8bdbf2cd9ddef3e24bea6a9485056091b",
+        "sha256_in_prefix": "5f531069471465a10b269ad3b35ea6e8bdbf2cd9ddef3e24bea6a9485056091b",
+        "size_in_bytes": 4237
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/__pycache__/touch_actions.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "87d48dd831928d1a0321bf4cd35a2144d193b3e41866bd99a2f76afe9a74f14d",
+        "sha256_in_prefix": "87d48dd831928d1a0321bf4cd35a2144d193b3e41866bd99a2f76afe9a74f14d",
+        "size_in_bytes": 6908
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/__pycache__/utils.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "cd226cea2c9f731da2e932110badc131db888f999875b5b6422deb73bb9ca1a0",
+        "sha256_in_prefix": "cd226cea2c9f731da2e932110badc131db888f999875b5b6422deb73bb9ca1a0",
+        "size_in_bytes": 3442
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/action_chains.py",
+        "path_type": "hardlink",
+        "sha256": "ef9a5e0b5ae82c2ce8a776644aa45ccb065c84f826e98b1989b322745e87d567",
+        "sha256_in_prefix": "ef9a5e0b5ae82c2ce8a776644aa45ccb065c84f826e98b1989b322745e87d567",
+        "size_in_bytes": 12332
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/actions/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "sha256_in_prefix": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "size_in_bytes": 787
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/actions/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "6c9cf92bff5c925666dc5d2d3bdb13e0789937ae258eb6cc4b6a3b840bb0c0f6",
+        "sha256_in_prefix": "6c9cf92bff5c925666dc5d2d3bdb13e0789937ae258eb6cc4b6a3b840bb0c0f6",
+        "size_in_bytes": 156
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/actions/__pycache__/action_builder.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "68aea37b3d2065109bc275e0d31e4e70118d412f647c26219ebfdef36fd676b4",
+        "sha256_in_prefix": "68aea37b3d2065109bc275e0d31e4e70118d412f647c26219ebfdef36fd676b4",
+        "size_in_bytes": 3116
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/actions/__pycache__/input_device.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "82d364bb82edbee9abb039118a1eadea76e46a3bfa21480dc29f20dc9c9369fe",
+        "sha256_in_prefix": "82d364bb82edbee9abb039118a1eadea76e46a3bfa21480dc29f20dc9c9369fe",
+        "size_in_bytes": 1062
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/actions/__pycache__/interaction.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "f51d9ce447b7bab59f7af71063ddd17ff95d1e11f829ae6af8f329a4a7f47f7d",
+        "sha256_in_prefix": "f51d9ce447b7bab59f7af71063ddd17ff95d1e11f829ae6af8f329a4a7f47f7d",
+        "size_in_bytes": 1182
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/actions/__pycache__/key_actions.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "865468c50174e5d8278dfe4fb75b87a04caeb14562c54d4a99935da3b9facac2",
+        "sha256_in_prefix": "865468c50174e5d8278dfe4fb75b87a04caeb14562c54d4a99935da3b9facac2",
+        "size_in_bytes": 1554
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/actions/__pycache__/key_input.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "53a10031e51d3067d187976d535a00d4d99f53216a7954fc39e1280e9c96eff7",
+        "sha256_in_prefix": "53a10031e51d3067d187976d535a00d4d99f53216a7954fc39e1280e9c96eff7",
+        "size_in_bytes": 1984
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/actions/__pycache__/mouse_button.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "205469c80b043f61ff5a842bf47cd0c7765fdb28199bfbbb8b9d15135f33f097",
+        "sha256_in_prefix": "205469c80b043f61ff5a842bf47cd0c7765fdb28199bfbbb8b9d15135f33f097",
+        "size_in_bytes": 371
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/actions/__pycache__/pointer_actions.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "74f6056bb4739781b86f7235314ecec3e96d1c1259b88a0e8cca1cb9299f5c33",
+        "sha256_in_prefix": "74f6056bb4739781b86f7235314ecec3e96d1c1259b88a0e8cca1cb9299f5c33",
+        "size_in_bytes": 3358
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/actions/__pycache__/pointer_input.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "58873383f9bfa70f59a9446f6154d8293301913070ff26226f94450aa354279a",
+        "sha256_in_prefix": "58873383f9bfa70f59a9446f6154d8293301913070ff26226f94450aa354279a",
+        "size_in_bytes": 2447
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/actions/action_builder.py",
+        "path_type": "hardlink",
+        "sha256": "361eefa0c90ee1d36d646477beb8720d91ee699f3e3866ba2a3f3b71dc8ff98c",
+        "sha256_in_prefix": "361eefa0c90ee1d36d646477beb8720d91ee699f3e3866ba2a3f3b71dc8ff98c",
+        "size_in_bytes": 2825
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/actions/input_device.py",
+        "path_type": "hardlink",
+        "sha256": "a30c37c9cad8c4e9777e15ea8164a21b26e255b055217698e6575f59e4c104cc",
+        "sha256_in_prefix": "a30c37c9cad8c4e9777e15ea8164a21b26e255b055217698e6575f59e4c104cc",
+        "size_in_bytes": 1279
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/actions/interaction.py",
+        "path_type": "hardlink",
+        "sha256": "4b2ea2572ffe42e4d4dc0a77550251428c8499fa60314d89480c4760a5a524f0",
+        "sha256_in_prefix": "4b2ea2572ffe42e4d4dc0a77550251428c8499fa60314d89480c4760a5a524f0",
+        "size_in_bytes": 1434
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/actions/key_actions.py",
+        "path_type": "hardlink",
+        "sha256": "109265e18360edafe0eafb172a80beac9680d1868cb18d15f30d2d640ac34b2b",
+        "sha256_in_prefix": "109265e18360edafe0eafb172a80beac9680d1868cb18d15f30d2d640ac34b2b",
+        "size_in_bytes": 1733
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/actions/key_input.py",
+        "path_type": "hardlink",
+        "sha256": "e0f0511a1b4b4c8651dce7b6f0fd2f7bb4702d66dabd5e3e5b6be2ba70304399",
+        "sha256_in_prefix": "e0f0511a1b4b4c8651dce7b6f0fd2f7bb4702d66dabd5e3e5b6be2ba70304399",
+        "size_in_bytes": 1782
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/actions/mouse_button.py",
+        "path_type": "hardlink",
+        "sha256": "c206e6404cbee2faad872b10db0f14d170bf216609ed2eacfabbecb2cb259ea8",
+        "sha256_in_prefix": "c206e6404cbee2faad872b10db0f14d170bf216609ed2eacfabbecb2cb259ea8",
+        "size_in_bytes": 70
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/actions/pointer_actions.py",
+        "path_type": "hardlink",
+        "sha256": "51124fcc2f64cf9baaf5d9ec2c3df09b2cdfefd149381002a6930cbcc8fdef0e",
+        "sha256_in_prefix": "51124fcc2f64cf9baaf5d9ec2c3df09b2cdfefd149381002a6930cbcc8fdef0e",
+        "size_in_bytes": 3335
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/actions/pointer_input.py",
+        "path_type": "hardlink",
+        "sha256": "1e4ea21dc0c4d2b7efd35da555b997d70fc44130b5946236846a170586b13c2b",
+        "sha256_in_prefix": "1e4ea21dc0c4d2b7efd35da555b997d70fc44130b5946236846a170586b13c2b",
+        "size_in_bytes": 2459
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/alert.py",
+        "path_type": "hardlink",
+        "sha256": "6a13865d411bf574162eace7e97f67d643faeb997dcf70115e3876f33ded15ef",
+        "sha256_in_prefix": "6a13865d411bf574162eace7e97f67d643faeb997dcf70115e3876f33ded15ef",
+        "size_in_bytes": 3099
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/by.py",
+        "path_type": "hardlink",
+        "sha256": "36b0ec11f030cae3eac7be29c377de6c00defdf2a2da699939942fb370c8f6a5",
+        "sha256_in_prefix": "36b0ec11f030cae3eac7be29c377de6c00defdf2a2da699939942fb370c8f6a5",
+        "size_in_bytes": 1111
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/desired_capabilities.py",
+        "path_type": "hardlink",
+        "sha256": "b39d1b47561b1b5a2d30396898fc542c5d5c73a474161229bde456b9dd28dc51",
+        "sha256_in_prefix": "b39d1b47561b1b5a2d30396898fc542c5d5c73a474161229bde456b9dd28dc51",
+        "size_in_bytes": 3320
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/html5/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "sha256_in_prefix": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "size_in_bytes": 787
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/html5/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "2d30e75bba9d33f47abb3b143b309cdc2aa11e1751710df61fff8de8d4dc0cbf",
+        "sha256_in_prefix": "2d30e75bba9d33f47abb3b143b309cdc2aa11e1751710df61fff8de8d4dc0cbf",
+        "size_in_bytes": 154
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/html5/__pycache__/application_cache.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "42cee319d914ca856fa5012478d6672bd6a1b9a716f9add65e893b6c7efffc63",
+        "sha256_in_prefix": "42cee319d914ca856fa5012478d6672bd6a1b9a716f9add65e893b6c7efffc63",
+        "size_in_bytes": 1113
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/html5/application_cache.py",
+        "path_type": "hardlink",
+        "sha256": "626cbf6b39b607a65233d1fb44270c7cdcc546e71ca886bd9a9999c53cdd8813",
+        "sha256_in_prefix": "626cbf6b39b607a65233d1fb44270c7cdcc546e71ca886bd9a9999c53cdd8813",
+        "size_in_bytes": 1430
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/keys.py",
+        "path_type": "hardlink",
+        "sha256": "e5301ebe0d333b34b3aad79dfb80c9c53fafb9f6d2dc1f4f88642d81e5566205",
+        "sha256_in_prefix": "e5301ebe0d333b34b3aad79dfb80c9c53fafb9f6d2dc1f4f88642d81e5566205",
+        "size_in_bytes": 2347
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/proxy.py",
+        "path_type": "hardlink",
+        "sha256": "48f49c3b91c0fd4a8fa8570edc90a0469197aa8f2a690b00e4a351257e9cf41f",
+        "sha256_in_prefix": "48f49c3b91c0fd4a8fa8570edc90a0469197aa8f2a690b00e4a351257e9cf41f",
+        "size_in_bytes": 10311
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/service.py",
+        "path_type": "hardlink",
+        "sha256": "9f61a9ed2250f65779ed2649263beb33912a73cd361acd3a439da39bc4aa3ae9",
+        "sha256_in_prefix": "9f61a9ed2250f65779ed2649263beb33912a73cd361acd3a439da39bc4aa3ae9",
+        "size_in_bytes": 5855
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/touch_actions.py",
+        "path_type": "hardlink",
+        "sha256": "b6d67c3775bf004febfc5fe7a4bb03523c0991c43f29f4d975f45093a2dda428",
+        "sha256_in_prefix": "b6d67c3775bf004febfc5fe7a4bb03523c0991c43f29f4d975f45093a2dda428",
+        "size_in_bytes": 5980
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/common/utils.py",
+        "path_type": "hardlink",
+        "sha256": "66ad4eac1cd5da1d3464769a25adf6de78681276f660a67468572f260ded5d4e",
+        "sha256_in_prefix": "66ad4eac1cd5da1d3464769a25adf6de78681276f660a67468572f260ded5d4e",
+        "size_in_bytes": 4231
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/edge/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "sha256_in_prefix": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "size_in_bytes": 787
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/edge/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "fe5037273aa5c12e7283988e005e21b07a1aaff312715deb0908b06a48e88146",
+        "sha256_in_prefix": "fe5037273aa5c12e7283988e005e21b07a1aaff312715deb0908b06a48e88146",
+        "size_in_bytes": 146
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/edge/__pycache__/options.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "25ff19846ecc84478eb2f9407660a7dc0134c11dd1911367ba56ef7fb61d480f",
+        "sha256_in_prefix": "25ff19846ecc84478eb2f9407660a7dc0134c11dd1911367ba56ef7fb61d480f",
+        "size_in_bytes": 1588
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/edge/__pycache__/service.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "aaf4ff884ba6ed64f7211c42840de1e7547f0827d2819590cac7cd0e59ef19b4",
+        "sha256_in_prefix": "aaf4ff884ba6ed64f7211c42840de1e7547f0827d2819590cac7cd0e59ef19b4",
+        "size_in_bytes": 1634
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/edge/__pycache__/webdriver.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "ac9a618095175a34002b243793487d2d61e487106041a4207c1aa982ed57cd56",
+        "sha256_in_prefix": "ac9a618095175a34002b243793487d2d61e487106041a4207c1aa982ed57cd56",
+        "size_in_bytes": 2320
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/edge/options.py",
+        "path_type": "hardlink",
+        "sha256": "0b1cc80632a1e76eb73bf55b1451c38c20d23d5f32b6dadcdd8e7ce6b7e53a5d",
+        "sha256_in_prefix": "0b1cc80632a1e76eb73bf55b1451c38c20d23d5f32b6dadcdd8e7ce6b7e53a5d",
+        "size_in_bytes": 1831
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/edge/service.py",
+        "path_type": "hardlink",
+        "sha256": "79fcca6a7c917051340d385167714eb111f675c0dd6aa5226640fa33be71db59",
+        "sha256_in_prefix": "79fcca6a7c917051340d385167714eb111f675c0dd6aa5226640fa33be71db59",
+        "size_in_bytes": 2161
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/edge/webdriver.py",
+        "path_type": "hardlink",
+        "sha256": "6fa6e467fc5dea86200477ca198ee25fdca3a76c2fde62d4e5b95200982fb821",
+        "sha256_in_prefix": "6fa6e467fc5dea86200477ca198ee25fdca3a76c2fde62d4e5b95200982fb821",
+        "size_in_bytes": 3111
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/firefox/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "sha256_in_prefix": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "size_in_bytes": 787
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/firefox/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "1ff67ba1b5cfeb54391cf5599ca889a41e53bfd553513c2a321fdf668abe9ef1",
+        "sha256_in_prefix": "1ff67ba1b5cfeb54391cf5599ca889a41e53bfd553513c2a321fdf668abe9ef1",
+        "size_in_bytes": 149
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/firefox/__pycache__/extension_connection.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "147b9d05b732092e35d32262e6f200ae55f715a3b57307f3da7fe1f5b29379db",
+        "sha256_in_prefix": "147b9d05b732092e35d32262e6f200ae55f715a3b57307f3da7fe1f5b29379db",
+        "size_in_bytes": 2635
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/firefox/__pycache__/firefox_binary.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "f2a363328a59302129c0ed008344de1f63c8648f692e13b2f571c210a95641f1",
+        "sha256_in_prefix": "f2a363328a59302129c0ed008344de1f63c8648f692e13b2f571c210a95641f1",
+        "size_in_bytes": 6766
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/firefox/__pycache__/firefox_profile.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "fb28a087bfdac98fb6b7d483c3a1e832176d775f34eeb84daf9aa1fa10c65861",
+        "sha256_in_prefix": "fb28a087bfdac98fb6b7d483c3a1e832176d775f34eeb84daf9aa1fa10c65861",
+        "size_in_bytes": 12392
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/firefox/__pycache__/options.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "91dffbc096de0aa1ab1e23c99d2131b3d37f7e1dfb26f60d90c0f847425f0d8f",
+        "sha256_in_prefix": "91dffbc096de0aa1ab1e23c99d2131b3d37f7e1dfb26f60d90c0f847425f0d8f",
+        "size_in_bytes": 5589
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/firefox/__pycache__/remote_connection.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "c38c5a7e09fd26e4a1c4f93386ddbba94fa1bd23b7ffeb4b931ea7d4f3dab421",
+        "sha256_in_prefix": "c38c5a7e09fd26e4a1c4f93386ddbba94fa1bd23b7ffeb4b931ea7d4f3dab421",
+        "size_in_bytes": 1121
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/firefox/__pycache__/service.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "29eb9de1e02c5d7275fd7866c7bf737c58f05e65869556d86e8875ea5b3f0f96",
+        "sha256_in_prefix": "29eb9de1e02c5d7275fd7866c7bf737c58f05e65869556d86e8875ea5b3f0f96",
+        "size_in_bytes": 1869
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/firefox/__pycache__/webdriver.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "b8930f8fb0fe1d2bd1ab7a26439c0d0f573031bf1b6d8811101c95f920d7c0d2",
+        "sha256_in_prefix": "b8930f8fb0fe1d2bd1ab7a26439c0d0f573031bf1b6d8811101c95f920d7c0d2",
+        "size_in_bytes": 7848
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/firefox/__pycache__/webelement.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "6c157ce3b0916cbbd2cce8cc690418ec8dc6de375c2d0c26226e65ae665365e3",
+        "sha256_in_prefix": "6c157ce3b0916cbbd2cce8cc690418ec8dc6de375c2d0c26226e65ae665365e3",
+        "size_in_bytes": 1624
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/firefox/amd64/x_ignore_nofocus.so",
+        "path_type": "hardlink",
+        "sha256": "feb0024422793c546bc6b1f0c4c5506d49dc9def36e87c9e2a838b75bb25b5bf",
+        "sha256_in_prefix": "feb0024422793c546bc6b1f0c4c5506d49dc9def36e87c9e2a838b75bb25b5bf",
+        "size_in_bytes": 41262
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/firefox/extension_connection.py",
+        "path_type": "hardlink",
+        "sha256": "f2d692dc6c1b0363ec9705ed43c5db87a6b853f48925120c82901e08a2eb9cf2",
+        "sha256_in_prefix": "f2d692dc6c1b0363ec9705ed43c5db87a6b853f48925120c82901e08a2eb9cf2",
+        "size_in_bytes": 2875
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/firefox/firefox_binary.py",
+        "path_type": "hardlink",
+        "sha256": "2275a3e833f504c3aa0457ab7ed32f50dd4ff091f47cf732ee4284dabc8d9d37",
+        "sha256_in_prefix": "2275a3e833f504c3aa0457ab7ed32f50dd4ff091f47cf732ee4284dabc8d9d37",
+        "size_in_bytes": 8752
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/firefox/firefox_profile.py",
+        "path_type": "hardlink",
+        "sha256": "1d22aeed7a759c86c70e039bbfde4a080dfb951f49f5d15b0b6400ddbe6c9e3f",
+        "sha256_in_prefix": "1d22aeed7a759c86c70e039bbfde4a080dfb951f49f5d15b0b6400ddbe6c9e3f",
+        "size_in_bytes": 15997
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/firefox/options.py",
+        "path_type": "hardlink",
+        "sha256": "ecbfc5d6a6543cf37d4a187426c5c2aad65d94e13e4c831469a5e748640715ee",
+        "sha256_in_prefix": "ecbfc5d6a6543cf37d4a187426c5c2aad65d94e13e4c831469a5e748640715ee",
+        "size_in_bytes": 5868
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/firefox/remote_connection.py",
+        "path_type": "hardlink",
+        "sha256": "a07a49fa84f06bd55c6bcf270ebe3789de20853c82b8f36446ef0c8d7f217c92",
+        "sha256_in_prefix": "a07a49fa84f06bd55c6bcf270ebe3789de20853c82b8f36446ef0c8d7f217c92",
+        "size_in_bytes": 1719
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/firefox/service.py",
+        "path_type": "hardlink",
+        "sha256": "fcf0fe06b7fe566a6e26cc4a3e086500259eeca1bb56f7687da57f9daedfa521",
+        "sha256_in_prefix": "fcf0fe06b7fe566a6e26cc4a3e086500259eeca1bb56f7687da57f9daedfa521",
+        "size_in_bytes": 2261
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/firefox/webdriver.py",
+        "path_type": "hardlink",
+        "sha256": "4e2160ebbb8164e6da41304c006305a6a4912435713da62a899e9f0866584f28",
+        "sha256_in_prefix": "4e2160ebbb8164e6da41304c006305a6a4912435713da62a899e9f0866584f28",
+        "size_in_bytes": 10727
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/firefox/webdriver.xpi",
+        "path_type": "hardlink",
+        "sha256": "86da3fa0e0417ff89669d90fede9f6b63f3d903907ecbe2583cf7e4a25ce3e70",
+        "sha256_in_prefix": "86da3fa0e0417ff89669d90fede9f6b63f3d903907ecbe2583cf7e4a25ce3e70",
+        "size_in_bytes": 716611
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/firefox/webdriver_prefs.json",
+        "path_type": "hardlink",
+        "sha256": "946add298a5e2346e3d53d1cbe8ad7c33e4994130511f6d8b79268be50b7a34c",
+        "sha256_in_prefix": "946add298a5e2346e3d53d1cbe8ad7c33e4994130511f6d8b79268be50b7a34c",
+        "size_in_bytes": 2826
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/firefox/webelement.py",
+        "path_type": "hardlink",
+        "sha256": "caae531abbe58601d9fbdf2fc466944570cdc0b8434bd212b690c482f9c2d5bb",
+        "sha256_in_prefix": "caae531abbe58601d9fbdf2fc466944570cdc0b8434bd212b690c482f9c2d5bb",
+        "size_in_bytes": 2023
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/firefox/x86/x_ignore_nofocus.so",
+        "path_type": "hardlink",
+        "sha256": "b066ab4b605519d2eb03b07094481cc029979c3096edf3262c64da028caafed9",
+        "sha256_in_prefix": "b066ab4b605519d2eb03b07094481cc029979c3096edf3262c64da028caafed9",
+        "size_in_bytes": 30887
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/ie/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "sha256_in_prefix": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "size_in_bytes": 787
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/ie/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "cce12979395797997eef50a58f57f948a429534e93bb18556471a93150208516",
+        "sha256_in_prefix": "cce12979395797997eef50a58f57f948a429534e93bb18556471a93150208516",
+        "size_in_bytes": 144
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/ie/__pycache__/options.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "d405df11526925b7c2ac8a922e902bdc1991ee9c8c4d7cd29cf210f501aef9c9",
+        "sha256_in_prefix": "d405df11526925b7c2ac8a922e902bdc1991ee9c8c4d7cd29cf210f501aef9c9",
+        "size_in_bytes": 10444
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/ie/__pycache__/service.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "0e9f7d82fbdc7b6beb6f8e5f89d4391ef2df9dbd630148bfec03bb8b29f98da9",
+        "sha256_in_prefix": "0e9f7d82fbdc7b6beb6f8e5f89d4391ef2df9dbd630148bfec03bb8b29f98da9",
+        "size_in_bytes": 1653
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/ie/__pycache__/webdriver.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "9f304f99bc1734f71d548ff1cb4ae7532f9c1bf439825082e04f0510d31c93d4",
+        "sha256_in_prefix": "9f304f99bc1734f71d548ff1cb4ae7532f9c1bf439825082e04f0510d31c93d4",
+        "size_in_bytes": 3061
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/ie/options.py",
+        "path_type": "hardlink",
+        "sha256": "0e938bf9f597a4ed1e47fff9bbc11d95775c8c8ad468acdf3c38b6549141ed4d",
+        "sha256_in_prefix": "0e938bf9f597a4ed1e47fff9bbc11d95775c8c8ad468acdf3c38b6549141ed4d",
+        "size_in_bytes": 10565
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/ie/service.py",
+        "path_type": "hardlink",
+        "sha256": "c662dcb63c24f7dcb71a46e84ec53fbd801d2ec39b58ec7fb4db5d40ac71546d",
+        "sha256_in_prefix": "c662dcb63c24f7dcb71a46e84ec53fbd801d2ec39b58ec7fb4db5d40ac71546d",
+        "size_in_bytes": 2235
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/ie/webdriver.py",
+        "path_type": "hardlink",
+        "sha256": "03f35ce3752442902a0f845d4c356fe20405843cecdcc54b5ba8b35c879b3ddf",
+        "sha256_in_prefix": "03f35ce3752442902a0f845d4c356fe20405843cecdcc54b5ba8b35c879b3ddf",
+        "size_in_bytes": 4366
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/opera/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "sha256_in_prefix": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "size_in_bytes": 787
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/opera/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "ada78ad7cffc0323f14945dba14169ff46367b6af2f3da45166fb9ac03f148c1",
+        "sha256_in_prefix": "ada78ad7cffc0323f14945dba14169ff46367b6af2f3da45166fb9ac03f148c1",
+        "size_in_bytes": 147
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/opera/__pycache__/options.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "a421c859bc1d6bff3e566bb86a85304eb646ec3e0df9c34745b5d287e68a0c4e",
+        "sha256_in_prefix": "a421c859bc1d6bff3e566bb86a85304eb646ec3e0df9c34745b5d287e68a0c4e",
+        "size_in_bytes": 3153
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/opera/__pycache__/webdriver.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "f92ae3ec157870cdbfb9bc461357238c6238d19ca52ff49efce46f157ae0e263",
+        "sha256_in_prefix": "f92ae3ec157870cdbfb9bc461357238c6238d19ca52ff49efce46f157ae0e263",
+        "size_in_bytes": 2538
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/opera/options.py",
+        "path_type": "hardlink",
+        "sha256": "3cbd2d2dc1b01cdfad5fd1766a8383da61c52793e51f1cf13cb676080f6060b8",
+        "sha256_in_prefix": "3cbd2d2dc1b01cdfad5fd1766a8383da61c52793e51f1cf13cb676080f6060b8",
+        "size_in_bytes": 3572
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/opera/webdriver.py",
+        "path_type": "hardlink",
+        "sha256": "b9dd22c5f1c790f004c50e35e0b47d792e034b0e4832a5bbb39e61f1687aecac",
+        "sha256_in_prefix": "b9dd22c5f1c790f004c50e35e0b47d792e034b0e4832a5bbb39e61f1687aecac",
+        "size_in_bytes": 3555
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/phantomjs/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "sha256_in_prefix": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "size_in_bytes": 787
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/phantomjs/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "b551502a9974027f5495535f951841c6230a91a99b9fd3b77d0e3b95d740d1fe",
+        "sha256_in_prefix": "b551502a9974027f5495535f951841c6230a91a99b9fd3b77d0e3b95d740d1fe",
+        "size_in_bytes": 151
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/phantomjs/__pycache__/service.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "d8720e4b5d251b2345dab70dcef836ed1539fa5dcac66233440b6db7e42ff350",
+        "sha256_in_prefix": "d8720e4b5d251b2345dab70dcef836ed1539fa5dcac66233440b6db7e42ff350",
+        "size_in_bytes": 2216
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/phantomjs/__pycache__/webdriver.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "7b278578ee0e7bf7ae2ff7cdbf4948901b4cc9d52be1cb1a7f14c129c0972f2f",
+        "sha256_in_prefix": "7b278578ee0e7bf7ae2ff7cdbf4948901b4cc9d52be1cb1a7f14c129c0972f2f",
+        "size_in_bytes": 2316
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/phantomjs/service.py",
+        "path_type": "hardlink",
+        "sha256": "eee7e4a3c87cd1d5139c8f2e78ff5e7b4d55297351b3a7c0f8fc13cc644a54c4",
+        "sha256_in_prefix": "eee7e4a3c87cd1d5139c8f2e78ff5e7b4d55297351b3a7c0f8fc13cc644a54c4",
+        "size_in_bytes": 2587
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/phantomjs/webdriver.py",
+        "path_type": "hardlink",
+        "sha256": "4aaa5e2636b3c56fe9f6242712edb4664e960f59bc480a7324cf3fcc6a59a524",
+        "sha256_in_prefix": "4aaa5e2636b3c56fe9f6242712edb4664e960f59bc480a7324cf3fcc6a59a524",
+        "size_in_bytes": 3111
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/remote/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "sha256_in_prefix": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "size_in_bytes": 787
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/remote/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "e7e4a7ef537008deb595b0fe113ff1a5b5d97091465b86c3d2899d06ad6b9319",
+        "sha256_in_prefix": "e7e4a7ef537008deb595b0fe113ff1a5b5d97091465b86c3d2899d06ad6b9319",
+        "size_in_bytes": 148
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/remote/__pycache__/command.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "8a8484ebbf99574fb4a08f05a875c83e59e86cc38dec3d6ac1c5791d80b8bb93",
+        "sha256_in_prefix": "8a8484ebbf99574fb4a08f05a875c83e59e86cc38dec3d6ac1c5791d80b8bb93",
+        "size_in_bytes": 5802
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/remote/__pycache__/errorhandler.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "414ee5adbaf5dbc8ceeada349c1d5ac5233f4bc4c9fef04b02bd20b652097c0e",
+        "sha256_in_prefix": "414ee5adbaf5dbc8ceeada349c1d5ac5233f4bc4c9fef04b02bd20b652097c0e",
+        "size_in_bytes": 6423
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/remote/__pycache__/file_detector.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "83a86e82ea4423321444be49546a55209041a69fcbdf3a6012bbab457f40fad9",
+        "sha256_in_prefix": "83a86e82ea4423321444be49546a55209041a69fcbdf3a6012bbab457f40fad9",
+        "size_in_bytes": 1511
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/remote/__pycache__/mobile.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "da59a4c63c5c6d9c76c3f40d67618d682c77b7e23ab872c5bb6cfde832a1f36c",
+        "sha256_in_prefix": "da59a4c63c5c6d9c76c3f40d67618d682c77b7e23ab872c5bb6cfde832a1f36c",
+        "size_in_bytes": 2727
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/remote/__pycache__/remote_connection.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "110320dcfbe40b4b279ec18a6bbb28d47df339fc3d9b0511ea3c2fdb93c0e86f",
+        "sha256_in_prefix": "110320dcfbe40b4b279ec18a6bbb28d47df339fc3d9b0511ea3c2fdb93c0e86f",
+        "size_in_bytes": 14425
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/remote/__pycache__/switch_to.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "ca93388e58d7735e7858415e6dc548d9c7c5d2999b41f5b85fc5548c190ee531",
+        "sha256_in_prefix": "ca93388e58d7735e7858415e6dc548d9c7c5d2999b41f5b85fc5548c190ee531",
+        "size_in_bytes": 4034
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/remote/__pycache__/utils.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "a6047f8178333eff0287e9e06406070b82bcc8bbc746b75dff6b213c1cea32a8",
+        "sha256_in_prefix": "a6047f8178333eff0287e9e06406070b82bcc8bbc746b75dff6b213c1cea32a8",
+        "size_in_bytes": 1740
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/remote/__pycache__/webdriver.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "1320d98c8acb7f196c0917e6cdbf48940d8be194a3bc5ba9c26c382c67f38545",
+        "sha256_in_prefix": "1320d98c8acb7f196c0917e6cdbf48940d8be194a3bc5ba9c26c382c67f38545",
+        "size_in_bytes": 40413
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/remote/__pycache__/webelement.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "208d07c95687d7ab9ce9dc96f06a9799e8443bfe0b070e3190c4026d44d39cee",
+        "sha256_in_prefix": "208d07c95687d7ab9ce9dc96f06a9799e8443bfe0b070e3190c4026d44d39cee",
+        "size_in_bytes": 23589
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/remote/command.py",
+        "path_type": "hardlink",
+        "sha256": "1761d88e82c62861bf343743275fb86f7ebe34f8b153f37824a3653c845892e4",
+        "sha256_in_prefix": "1761d88e82c62861bf343743275fb86f7ebe34f8b153f37824a3653c845892e4",
+        "size_in_bytes": 6499
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py",
+        "path_type": "hardlink",
+        "sha256": "d651634013d1a1f106e0e0824d75bb7c924d8044e38ef51cb8b638654406976d",
+        "sha256_in_prefix": "d651634013d1a1f106e0e0824d75bb7c924d8044e38ef51cb8b638654406976d",
+        "size_in_bytes": 11691
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/remote/file_detector.py",
+        "path_type": "hardlink",
+        "sha256": "60b2a87ec043dbb364f8f710446609cfbfe1eaf2f616f969d03c40e3b636c9ce",
+        "sha256_in_prefix": "60b2a87ec043dbb364f8f710446609cfbfe1eaf2f616f969d03c40e3b636c9ce",
+        "size_in_bytes": 1655
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/remote/getAttribute.js",
+        "path_type": "hardlink",
+        "sha256": "1198a9999dde24dd2da0d9877cc2e8f8dd70bfdaeee0b5012b24e5474b50e88c",
+        "sha256_in_prefix": "1198a9999dde24dd2da0d9877cc2e8f8dd70bfdaeee0b5012b24e5474b50e88c",
+        "size_in_bytes": 6354
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/remote/isDisplayed.js",
+        "path_type": "hardlink",
+        "sha256": "c1a04024e5414fca8c1deedb452be77a8b9d13bb3cf67ff4230d5983537a3096",
+        "sha256_in_prefix": "c1a04024e5414fca8c1deedb452be77a8b9d13bb3cf67ff4230d5983537a3096",
+        "size_in_bytes": 43992
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/remote/mobile.py",
+        "path_type": "hardlink",
+        "sha256": "166458e90db1034b82f663f9dd10b4f82a52e145898a8099deb81a5e0b532a41",
+        "sha256_in_prefix": "166458e90db1034b82f663f9dd10b4f82a52e145898a8099deb81a5e0b532a41",
+        "size_in_bytes": 2651
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py",
+        "path_type": "hardlink",
+        "sha256": "e5583e6327622a97a383b81a1e3a9fc160132e5e65880e31bff130ec7676d235",
+        "sha256_in_prefix": "e5583e6327622a97a383b81a1e3a9fc160132e5e65880e31bff130ec7676d235",
+        "size_in_bytes": 20163
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/remote/switch_to.py",
+        "path_type": "hardlink",
+        "sha256": "d9a0d0734b5b81fb0115014de2639ebfeca87a45929d773b103d532cbf7a1ce0",
+        "sha256_in_prefix": "d9a0d0734b5b81fb0115014de2639ebfeca87a45929d773b103d532cbf7a1ce0",
+        "size_in_bytes": 4610
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/remote/utils.py",
+        "path_type": "hardlink",
+        "sha256": "cb54cccb26fa265ab44b5918a1cb583c24942b9d7e84001d117cd6e5ca70e188",
+        "sha256_in_prefix": "cb54cccb26fa265ab44b5918a1cb583c24942b9d7e84001d117cd6e5ca70e188",
+        "size_in_bytes": 3068
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py",
+        "path_type": "hardlink",
+        "sha256": "9e63675ed5128bddaabc13b04ea65417e04a8fdf81fc81c6c9a3ebbe4fd74a2a",
+        "sha256_in_prefix": "9e63675ed5128bddaabc13b04ea65417e04a8fdf81fc81c6c9a3ebbe4fd74a2a",
+        "size_in_bytes": 41709
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py",
+        "path_type": "hardlink",
+        "sha256": "05263aa5061841bc0a1f071a088995abd09ef6982385bfff8d34c035469db359",
+        "sha256_in_prefix": "05263aa5061841bc0a1f071a088995abd09ef6982385bfff8d34c035469db359",
+        "size_in_bytes": 23664
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/safari/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "sha256_in_prefix": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "size_in_bytes": 787
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/safari/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "8017c7e6ca44c85e94c2c787ff031f9332128c349bb37febe4874f3ab20aa675",
+        "sha256_in_prefix": "8017c7e6ca44c85e94c2c787ff031f9332128c349bb37febe4874f3ab20aa675",
+        "size_in_bytes": 148
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/safari/__pycache__/permissions.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "69c3f62570fa877dc96f4f0c899f0eb14d6bf2467bed8d65914f934d26171d6f",
+        "sha256_in_prefix": "69c3f62570fa877dc96f4f0c899f0eb14d6bf2467bed8d65914f934d26171d6f",
+        "size_in_bytes": 444
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/safari/__pycache__/remote_connection.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "226bcf7c8237877ba53279914c5e5d3895060793e1da07d7eb8f7eb55eef7156",
+        "sha256_in_prefix": "226bcf7c8237877ba53279914c5e5d3895060793e1da07d7eb8f7eb55eef7156",
+        "size_in_bytes": 822
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/safari/__pycache__/service.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "245615d68ea303f3cac8c9f34b6e5e2ace9916880b2c92f0d75070dd5c6726e2",
+        "sha256_in_prefix": "245615d68ea303f3cac8c9f34b6e5e2ace9916880b2c92f0d75070dd5c6726e2",
+        "size_in_bytes": 1911
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/safari/__pycache__/webdriver.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "ea40621cd29143e010119d1ace37adecce9be3d16873aa228143041bb25a1bae",
+        "sha256_in_prefix": "ea40621cd29143e010119d1ace37adecce9be3d16873aa228143041bb25a1bae",
+        "size_in_bytes": 3435
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/safari/permissions.py",
+        "path_type": "hardlink",
+        "sha256": "36461e5fa3ac968f4fba87ca022592f339daa15ee988b5ffef2f62684c8f09bd",
+        "sha256_in_prefix": "36461e5fa3ac968f4fba87ca022592f339daa15ee988b5ffef2f62684c8f09bd",
+        "size_in_bytes": 942
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/safari/remote_connection.py",
+        "path_type": "hardlink",
+        "sha256": "94c43cdaacbcbfe7d558215848a4ff0dbc718b69770c5948460e45fd0f97810d",
+        "sha256_in_prefix": "94c43cdaacbcbfe7d558215848a4ff0dbc718b69770c5948460e45fd0f97810d",
+        "size_in_bytes": 1330
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/safari/service.py",
+        "path_type": "hardlink",
+        "sha256": "4a74bb6db1aab5a24f74bb7b56a0c56f0e465a044808c56c8af4a3448bfa926f",
+        "sha256_in_prefix": "4a74bb6db1aab5a24f74bb7b56a0c56f0e465a044808c56c8af4a3448bfa926f",
+        "size_in_bytes": 2414
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/safari/webdriver.py",
+        "path_type": "hardlink",
+        "sha256": "bd90c8e47da5a1dbde6dda2c3f080fcf10efb359d21d84372a7940d553da799a",
+        "sha256_in_prefix": "bd90c8e47da5a1dbde6dda2c3f080fcf10efb359d21d84372a7940d553da799a",
+        "size_in_bytes": 4641
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/support/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "sha256_in_prefix": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "size_in_bytes": 787
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/support/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "4d964844c39a836ac959e227279f60121ff64a27d10c99383c6c75bab273e45c",
+        "sha256_in_prefix": "4d964844c39a836ac959e227279f60121ff64a27d10c99383c6c75bab273e45c",
+        "size_in_bytes": 149
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/support/__pycache__/abstract_event_listener.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "c7a1dcc645048e4637bea2ea36f5366a6ec1e1142771c242e9e7add62fcc8c18",
+        "sha256_in_prefix": "c7a1dcc645048e4637bea2ea36f5366a6ec1e1142771c242e9e7add62fcc8c18",
+        "size_in_bytes": 3336
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/support/__pycache__/color.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "49207a3416f885e51840e6b8e82e70e9d235ca32fa5ed2256c161e79f759d8e4",
+        "sha256_in_prefix": "49207a3416f885e51840e6b8e82e70e9d235ca32fa5ed2256c161e79f759d8e4",
+        "size_in_bytes": 9719
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/support/__pycache__/event_firing_webdriver.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "43d5e148905ed7b70d16ea33546aa8710b0e700f06c731b95145959207330f74",
+        "sha256_in_prefix": "43d5e148905ed7b70d16ea33546aa8710b0e700f06c731b95145959207330f74",
+        "size_in_bytes": 15333
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/support/__pycache__/events.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "da251ceab92a8eff7310d6addfae1ebee45380ef1e0503dd82daa850e33aaa20",
+        "sha256_in_prefix": "da251ceab92a8eff7310d6addfae1ebee45380ef1e0503dd82daa850e33aaa20",
+        "size_in_bytes": 283
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/support/__pycache__/expected_conditions.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "260cf65876225fc55fddd378d828ef3b2c76fedaf8ec72352ed79bea054a64b5",
+        "sha256_in_prefix": "260cf65876225fc55fddd378d828ef3b2c76fedaf8ec72352ed79bea054a64b5",
+        "size_in_bytes": 17946
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/support/__pycache__/select.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "ad1e18daa45c0762cbc8159b3ae342ae1d2d75cab29c182be563a56573f4d91d",
+        "sha256_in_prefix": "ad1e18daa45c0762cbc8159b3ae342ae1d2d75cab29c182be563a56573f4d91d",
+        "size_in_bytes": 8012
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/support/__pycache__/ui.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "27b8cb009d6037a9d17c9fdd7423e19cc988f295b9c8851827a50bb013204504",
+        "sha256_in_prefix": "27b8cb009d6037a9d17c9fdd7423e19cc988f295b9c8851827a50bb013204504",
+        "size_in_bytes": 222
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/support/__pycache__/wait.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "b68fd7cb05afec5b31486c9280dcdaa4cf6acbbed92506dca22cbab987e21a9b",
+        "sha256_in_prefix": "b68fd7cb05afec5b31486c9280dcdaa4cf6acbbed92506dca22cbab987e21a9b",
+        "size_in_bytes": 2939
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/support/abstract_event_listener.py",
+        "path_type": "hardlink",
+        "sha256": "bee5ce22ef7524141785c7d3354cf8eaad3e7552bd0add9840dffe975c13cd47",
+        "sha256_in_prefix": "bee5ce22ef7524141785c7d3354cf8eaad3e7552bd0add9840dffe975c13cd47",
+        "size_in_bytes": 2033
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/support/color.py",
+        "path_type": "hardlink",
+        "sha256": "3844d315e67e6a530278c286092f70bb7e4a568e29a1e18bfe8e0a8877332c57",
+        "sha256_in_prefix": "3844d315e67e6a530278c286092f70bb7e4a568e29a1e18bfe8e0a8877332c57",
+        "size_in_bytes": 11396
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/support/event_firing_webdriver.py",
+        "path_type": "hardlink",
+        "sha256": "c0ebd81c1db27b177bd4ed3082e3169c2d7539cbe14d1f12332c938bc3cc2a1b",
+        "sha256_in_prefix": "c0ebd81c1db27b177bd4ed3082e3169c2d7539cbe14d1f12332c938bc3cc2a1b",
+        "size_in_bytes": 12342
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/support/events.py",
+        "path_type": "hardlink",
+        "sha256": "6a66a4c0159f277ee9227aee231d49cdebf7fa871bea30a5f6573cd93683e55c",
+        "sha256_in_prefix": "6a66a4c0159f277ee9227aee231d49cdebf7fa871bea30a5f6573cd93683e55c",
+        "size_in_bytes": 920
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py",
+        "path_type": "hardlink",
+        "sha256": "dacfeb309a10677cc91cc8b2c9f4d353f31412c87e95ebe9fd326377ac53144b",
+        "sha256_in_prefix": "dacfeb309a10677cc91cc8b2c9f4d353f31412c87e95ebe9fd326377ac53144b",
+        "size_in_bytes": 13687
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/support/select.py",
+        "path_type": "hardlink",
+        "sha256": "08b1aa58e9dec8a66c32d6f54ae7c4a1f27e9c0969ec6323848b1700bfdb0c6c",
+        "sha256_in_prefix": "08b1aa58e9dec8a66c32d6f54ae7c4a1f27e9c0969ec6323848b1700bfdb0c6c",
+        "size_in_bytes": 9257
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/support/ui.py",
+        "path_type": "hardlink",
+        "sha256": "aba4076a530b3e6a663d5f0f7e63792b72c24b724ba7280e1ba2666147770b99",
+        "sha256_in_prefix": "aba4076a530b3e6a663d5f0f7e63792b72c24b724ba7280e1ba2666147770b99",
+        "size_in_bytes": 863
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/support/wait.py",
+        "path_type": "hardlink",
+        "sha256": "5d0b3ede67666559a090cdc45b5a81c39fc10efff3c483971163b48601998c67",
+        "sha256_in_prefix": "5d0b3ede67666559a090cdc45b5a81c39fc10efff3c483971163b48601998c67",
+        "size_in_bytes": 4070
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/webkitgtk/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "sha256_in_prefix": "dd329a0412b4f1e882b0618515c665670c231c77268f660ed31226821a49937f",
+        "size_in_bytes": 787
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/webkitgtk/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "1814fea176fcc63da43700af0bacb15063681fb1e36530aa5b0fb40d7539789e",
+        "sha256_in_prefix": "1814fea176fcc63da43700af0bacb15063681fb1e36530aa5b0fb40d7539789e",
+        "size_in_bytes": 151
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/webkitgtk/__pycache__/options.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "8b2cbbd8ce9e7c57396f23034f7f11500eb4c035a36e6a333a848ebd73669efd",
+        "sha256_in_prefix": "8b2cbbd8ce9e7c57396f23034f7f11500eb4c035a36e6a333a848ebd73669efd",
+        "size_in_bytes": 2821
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/webkitgtk/__pycache__/service.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "2802149bb3d2a1f7f056f4c8ad1990cb6b75298994062847ed3fa410a3a228ef",
+        "sha256_in_prefix": "2802149bb3d2a1f7f056f4c8ad1990cb6b75298994062847ed3fa410a3a228ef",
+        "size_in_bytes": 1255
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/webkitgtk/__pycache__/webdriver.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "8dcbab16054391972f15d67fe2ae604370b678cb74847bc0b6ea41904333adc8",
+        "sha256_in_prefix": "8dcbab16054391972f15d67fe2ae604370b678cb74847bc0b6ea41904333adc8",
+        "size_in_bytes": 2245
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/webkitgtk/options.py",
+        "path_type": "hardlink",
+        "sha256": "2a77c4d9d4b6effd71fb728d4cf979567d63639b955cd646e9d4aea0634c64c4",
+        "sha256_in_prefix": "2a77c4d9d4b6effd71fb728d4cf979567d63639b955cd646e9d4aea0634c64c4",
+        "size_in_bytes": 3184
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/webkitgtk/service.py",
+        "path_type": "hardlink",
+        "sha256": "cd6c29f7ee6f20e4c264def11d85e27a943b7b5fab3460c1a3f7b83f15ac3f1e",
+        "sha256_in_prefix": "cd6c29f7ee6f20e4c264def11d85e27a943b7b5fab3460c1a3f7b83f15ac3f1e",
+        "size_in_bytes": 1580
+      },
+      {
+        "_path": "lib/python3.6/site-packages/selenium/webdriver/webkitgtk/webdriver.py",
+        "path_type": "hardlink",
+        "sha256": "e1dc1c6161b91d6d80b17a30f4a70f327c23052bdbe4e31dedfd9c13879877ac",
+        "sha256_in_prefix": "e1dc1c6161b91d6d80b17a30f4a70f327c23052bdbe4e31dedfd9c13879877ac",
+        "size_in_bytes": 2959
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "selenium",
+  "sha256": "c66a20d98491662e1bffe42d2da5d730d81995c0111965d21375449cf5a03d10",
+  "size": 827528,
+  "subdir": "osx-64",
+  "timestamp": 1545122891230,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-64/selenium-3.141.0-py36h1de35cc_0.conda",
+  "version": "3.141.0"
+}
