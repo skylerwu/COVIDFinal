@@ -15,6 +15,7 @@ import java.util.ArrayList;
 public class KffData {
 
     public static void main(String[] args) throws Exception {
+        System.out.println(pullHTML());
         for (String[] element: parseData(pullHTML())){
             for(String under: element) {
                 System.out.println(under);
@@ -28,7 +29,7 @@ public class KffData {
         line = line.replace("&quot", "").replace(",;", "").
                 replace("null","").replace("<div kff-indicator-components data-app-js=","");
 
-        line = line.substring(line.indexOf(";,[")+3, line.indexOf("]]]")+2);
+        line = line.substring(line.indexOf(";,[")+3, line.indexOf("Notes"));
         return line;
     }
 
@@ -52,6 +53,7 @@ public class KffData {
                 htmlData.add(processLine(line));
             }
         }
+        is.close();
         return htmlData;
     }
 
@@ -72,18 +74,19 @@ public class KffData {
     private static JSONObject toJSON(ArrayList<String[]> source) {
         JSONObject jsonParentObject = new JSONObject();
 
-        for(int k=0; k < source.size(); k++) {
+        for(int k=2; k < 3; k++) {
             String[] table = source.get(k);
 
-            String[] headers = table[0].split(";");
+            String[] headers = table[0].replaceAll("[,\\-/]", "").split(";");
             for (String row : table) {
                 try {
+                    row = row.replaceAll("[,\\-/]", "");
                     String[] parsedRow = row.split(";");
-                    for (String element : parsedRow) {
-                    }
+
+                    System.out.println(headers.toString());
                     JSONObject jsonObject = new JSONObject();
                     for (int i = 0; i < headers.length; i++) {
-                        jsonObject.accumulate(headers[i], parsedRow[i + 1].replace(",", ""));
+                        jsonObject.accumulate(headers[i], parsedRow[i + 1]);
                     }
 
                     jsonParentObject.put(parsedRow[0], jsonObject);
@@ -94,6 +97,10 @@ public class KffData {
             }
         }
         return jsonParentObject;
+    }
+
+    public static JSONObject dataMain() throws Exception{
+        return toJSON(parseData(pullHTML()));
     }
 }
 
