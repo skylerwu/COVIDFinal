@@ -54,11 +54,6 @@
             <version>20190722</version>
         </dependency>
 
-        <dependency>
-            <groupId>net.sourceforge.htmlunit</groupId>
-            <artifactId>htmlunit</artifactId>
-            <version>LATEST</version>
-        </dependency>
 
     </dependencies>
 
