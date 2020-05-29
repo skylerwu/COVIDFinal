@@ -1,5 +1,7 @@
 package view;
 
+import control.*;
+import control.Control.Criteria;
 
 import java.awt.Color;
 import java.awt.Container;
@@ -55,13 +57,15 @@ public class Country_UI extends JFrame {
 			getContentPane().setLayout(null);
 			
 			setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-			setBounds(100, 100, 1322, 890);
+			setBounds(100, 100, 1378, 929);
 			
 			JLabel lblNewLabel_5 = new JLabel("CDC Logo");
 			lblNewLabel_5.setHorizontalAlignment(SwingConstants.CENTER);
 			lblNewLabel_5.setBounds(36, 16, 77, 74);
 			getContentPane().add(lblNewLabel_5);
 			lblNewLabel_5.setIcon(new ImageIcon("CDC.png"));
+			
+			Control.fillAllStates();
 			
 			JLabel lblNewLabel_1 = new JLabel("CDC Covid-19 Case Database");
 			lblNewLabel_1.setFont(new Font("Big Caslon", Font.BOLD, 40));
@@ -72,7 +76,7 @@ public class Country_UI extends JFrame {
 
 			JLabel lblNewLabel = new JLabel("US Map");
 			lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-			lblNewLabel.setBounds(875, 531, 306, 225);
+			lblNewLabel.setBounds(386, 125, 342, 250);
 			getContentPane().add(lblNewLabel);
 			lblNewLabel.setIcon(new ImageIcon("corona.jpg"));
 			
@@ -86,24 +90,14 @@ public class Country_UI extends JFrame {
 			label.setBounds(216, 104, 38, 55);
 			getContentPane().add(label);
 			
-			JLabel lblTotalRecovered = new JLabel("TOTAL RECOVERED:");
-			lblTotalRecovered.setFont(new Font("Tahoma", Font.PLAIN, 29));
-			lblTotalRecovered.setBounds(414, 100, 269, 60);
-			getContentPane().add(lblTotalRecovered);
-			
-			JLabel label_1 = new JLabel("#");
-			label_1.setFont(new Font("Tahoma", Font.PLAIN, 31));
-			label_1.setBounds(684, 104, 38, 55);
-			getContentPane().add(label_1);
-			
 			JLabel lblTotalDeaths = new JLabel("TOTAL DEATHS:");
 			lblTotalDeaths.setFont(new Font("Tahoma", Font.PLAIN, 29));
-			lblTotalDeaths.setBounds(892, 99, 211, 60);
+			lblTotalDeaths.setBounds(939, 101, 211, 60);
 			getContentPane().add(lblTotalDeaths);
 			
 			JLabel label_2 = new JLabel("#");
 			label_2.setFont(new Font("Tahoma", Font.PLAIN, 31));
-			label_2.setBounds(1112, 104, 38, 55);
+			label_2.setBounds(1165, 104, 38, 55);
 			getContentPane().add(label_2);
 			
 			JPanel panel = new JPanel();
@@ -120,57 +114,64 @@ public class Country_UI extends JFrame {
 			
 			JLabel lblMostDeaths = new JLabel("Most Deaths By State");
 			lblMostDeaths.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			lblMostDeaths.setBounds(892, 152, 269, 66);
+			lblMostDeaths.setBounds(939, 163, 269, 66);
 			getContentPane().add(lblMostDeaths);
 			
 			JLabel label_3 = new JLabel("1.");
 			label_3.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			label_3.setBounds(892, 206, 38, 55);
+			label_3.setBounds(939, 206, 38, 55);
 			getContentPane().add(label_3);
 			
 			JLabel label_3_1 = new JLabel("2.");
 			label_3_1.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			label_3_1.setBounds(892, 260, 38, 55);
+			label_3_1.setBounds(939, 260, 38, 55);
 			getContentPane().add(label_3_1);
 			
 			JLabel label_3_2 = new JLabel("3.");
 			label_3_2.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			label_3_2.setBounds(892, 320, 38, 55);
+			label_3_2.setBounds(939, 320, 38, 55);
 			getContentPane().add(label_3_2);
 			
 			JLabel label_3_3 = new JLabel("4.");
 			label_3_3.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			label_3_3.setBounds(892, 372, 38, 55);
+			label_3_3.setBounds(939, 383, 38, 55);
 			getContentPane().add(label_3_3);
 			
 			JLabel label_3_4 = new JLabel("5.");
 			label_3_4.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			label_3_4.setBounds(892, 430, 38, 55);
+			label_3_4.setBounds(939, 444, 38, 55);
 			getContentPane().add(label_3_4);
 			
-			JLabel lblNewLabel_2 = new JLabel("State");
+			//TOP DEATHS
+			Control.sortAllStates(Criteria.TOTALDEATHS);
+			//state 1 cases
+			JLabel lblNewLabel_2 = new JLabel((Control.allStates.get(0)).getStateName());
 			lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			lblNewLabel_2.setBounds(931, 223, 69, 20);
+			lblNewLabel_2.setBounds(974, 223, 229, 20);
 			getContentPane().add(lblNewLabel_2);
 			
-			JLabel lblNewLabel_2_1 = new JLabel("State");
+			//state 2 cases
+			JLabel lblNewLabel_2_1 = new JLabel((Control.allStates.get(1)).getStateName());
 			lblNewLabel_2_1.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			lblNewLabel_2_1.setBounds(931, 277, 69, 20);
+			lblNewLabel_2_1.setBounds(974, 277, 211, 20);
 			getContentPane().add(lblNewLabel_2_1);
 			
-			JLabel lblNewLabel_2_2 = new JLabel("State");
+			//state 3 cases
+			JLabel lblNewLabel_2_2 = new JLabel((Control.allStates.get(2)).getStateName());
 			lblNewLabel_2_2.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			lblNewLabel_2_2.setBounds(931, 337, 69, 20);
+			lblNewLabel_2_2.setBounds(974, 337, 229, 20);
 			getContentPane().add(lblNewLabel_2_2);
 			
-			JLabel lblNewLabel_2_3 = new JLabel("State");
+			//state 4 cases
+			JLabel lblNewLabel_2_3 = new JLabel((Control.allStates.get(3)).getStateName());
 			lblNewLabel_2_3.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			lblNewLabel_2_3.setBounds(931, 393, 69, 20);
+			lblNewLabel_2_3.setBounds(974, 400, 248, 20);
 			getContentPane().add(lblNewLabel_2_3);
 			
-			JLabel lblNewLabel_2_4 = new JLabel("State");
+			//state 5 cases
+			JLabel lblNewLabel_2_4 = new JLabel((Control.allStates.get(4)).getStateName());
 			lblNewLabel_2_4.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			lblNewLabel_2_4.setBounds(931, 451, 69, 20);
+			lblNewLabel_2_4.setBounds(974, 461, 229, 20);
 			getContentPane().add(lblNewLabel_2_4);
 			
 			JLabel lblMostCasesBy = new JLabel("Most Cases By State");
@@ -195,51 +196,76 @@ public class Country_UI extends JFrame {
 			
 			JLabel label_3_3_1 = new JLabel("4.");
 			label_3_3_1.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			label_3_3_1.setBounds(26, 372, 38, 55);
+			label_3_3_1.setBounds(26, 383, 38, 55);
 			getContentPane().add(label_3_3_1);
 			
 			JLabel label_3_4_1 = new JLabel("5.");
 			label_3_4_1.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			label_3_4_1.setBounds(26, 430, 38, 55);
+			label_3_4_1.setBounds(26, 444, 38, 55);
 			getContentPane().add(label_3_4_1);
 			
-			JLabel lblNewLabel_2_5 = new JLabel("State");
+			//TOP CASES
+			Control.sortAllStates(Criteria.TOTALCASES);
+			//state 1 deaths
+			JLabel lblNewLabel_2_5 = new JLabel((Control.allStates.get(0)).getStateName());
 			lblNewLabel_2_5.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			lblNewLabel_2_5.setBounds(55, 223, 69, 20);
+			lblNewLabel_2_5.setBounds(55, 223, 240, 20);
 			getContentPane().add(lblNewLabel_2_5);
 			
-			JLabel lblNewLabel_2_6 = new JLabel("State");
+			//state 2 deaths
+			JLabel lblNewLabel_2_6 = new JLabel((Control.allStates.get(1)).getStateName());
 			lblNewLabel_2_6.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			lblNewLabel_2_6.setBounds(55, 281, 69, 20);
+			lblNewLabel_2_6.setBounds(55, 281, 199, 20);
 			getContentPane().add(lblNewLabel_2_6);
 			
-			JLabel lblNewLabel_2_7 = new JLabel("State");
+			//staet 3 deaths
+			JLabel lblNewLabel_2_7 = new JLabel((Control.allStates.get(2)).getStateName());
 			lblNewLabel_2_7.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			lblNewLabel_2_7.setBounds(55, 337, 69, 20);
+			lblNewLabel_2_7.setBounds(55, 337, 176, 20);
 			getContentPane().add(lblNewLabel_2_7);
 			
-			JLabel lblNewLabel_2_8 = new JLabel("State");
+			//state 4 deaths
+			JLabel lblNewLabel_2_8 = new JLabel((Control.allStates.get(3)).getStateName());
 			lblNewLabel_2_8.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			lblNewLabel_2_8.setBounds(55, 389, 69, 20);
+			lblNewLabel_2_8.setBounds(55, 400, 176, 20);
 			getContentPane().add(lblNewLabel_2_8);
 			
-			JLabel lblNewLabel_2_9 = new JLabel("State");
+			//state 5 deaths
+			JLabel lblNewLabel_2_9 = new JLabel((Control.allStates.get(4)).getStateName());
 			lblNewLabel_2_9.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			lblNewLabel_2_9.setBounds(55, 447, 69, 20);
+			lblNewLabel_2_9.setBounds(55, 461, 230, 20);
 			getContentPane().add(lblNewLabel_2_9);
 			
 			JTextField txtSearchForA = new JTextField();
 			txtSearchForA.setForeground(Color.BLACK);
 			txtSearchForA.setFont(new Font("Big Caslon", Font.PLAIN, 16));
 			txtSearchForA.setText("Search for a State:");
-			txtSearchForA.setBounds(910, 15, 266, 39);
+			txtSearchForA.setBounds(903, 33, 266, 39);
 			getContentPane().add(txtSearchForA);
 			txtSearchForA.setColumns(10);
 			
 			JButton btnSearch = new JButton("Search");
+			btnSearch.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+					
+					//need to add check if search input is in data set later
+						String input = txtSearchForA.getText();
+						String actual = (input.substring(0,1)).toUpperCase() + input.substring(1);
+						Control.fillAllStates();
+						State ob = Control.getStateObject(actual);
+						if(Control.allStates.indexOf(ob)>=0)
+						{
+							State_UI f = new State_UI();
+							f.lblNewLabel_1.setText(actual);
+							f.setVisible(true);
+						}
+	
+				}
+			});
+			
 			btnSearch.setFont(new Font("Big Caslon", Font.BOLD, 16));
 			btnSearch.setForeground(Color.BLACK);
-			btnSearch.setBounds(1184, 16, 117, 39);
+			btnSearch.setBounds(1184, 33, 117, 39);
 			getContentPane().add(btnSearch);
 
 			
