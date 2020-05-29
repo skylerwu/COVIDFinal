@@ -22,7 +22,7 @@ import javax.swing.JTextPane;
 
 public class State_UI extends JFrame {
 	int i = 0;
-
+	JLabel lblNewLabel_1;
 		public static void main(String[] args) {
 			EventQueue.invokeLater(new Runnable() {
 				public void run() {
@@ -41,7 +41,7 @@ public class State_UI extends JFrame {
 			getContentPane().setLayout(null);
 			
 			setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-			setBounds(100, 100, 961, 730);
+			setBounds(100, 100, 1006, 838);
 			
 			JLabel lblNewLabel_5 = new JLabel("CDC Logo");
 			lblNewLabel_5.setHorizontalAlignment(SwingConstants.CENTER);
@@ -54,7 +54,7 @@ public class State_UI extends JFrame {
 			lblNewLabel.setBounds(30, 88, 345, 219);
 			getContentPane().add(lblNewLabel);
 			
-			JLabel lblNewLabel_1 = new JLabel("State Name");
+			lblNewLabel_1 = new JLabel("State Name");
 			lblNewLabel_1.setFont(new Font("Big Caslon", Font.BOLD, 40));
 			lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
 			lblNewLabel_1.setBounds(349, 22, 275, 55);
