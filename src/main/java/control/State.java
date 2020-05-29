@@ -17,60 +17,44 @@ import com.amazonaws.services.dynamodbv2.document.spec.QuerySpec;
 public class State {
 //INSTANCE VARIABLES
 	private String stateName;
-	private String totalCases;
-	private String casesPerMillion;
-	private String totalDeaths;
-	private String deathsPerMillion;
-	
-	//NOT CREATED IN TABLE YET
-	private double fatalityRate;
-	private String distancingMeasures;
-	private boolean isStayAtHome;
-	private int totalOver65;
+	private double totalCases;
+	private double totalDeaths;
+	private String distancingMeasures; //blank or has a dash, then leave out; if present, then add to String.
+	//private boolean isStayAtHome;
+	private double totalOver65;
 	private double percentOlderAdults;
 	
-	public State (String name)
+	public State (String name, String totCases, String deathTotal, 
+	String measuresDistancing, String over65, String oldPercent)
 	{
-		ProfileCredentialsProvider credentialsProvider = new ProfileCredentialsProvider();
-        try {
-            credentialsProvider.getCredentials();
-        } catch (Exception e) {
-            throw new AmazonClientException(
-                    "Cannot load the credentials from the credential profiles file. " +
-                    "Please make sure that your credentials file is at the correct " +
-                    "location (/Users/johnmortensen/.aws/credentials), and is in valid format.",
-                    e);
-        }
-        AmazonDynamoDB client = AmazonDynamoDBClientBuilder.standard()
-        		.withCredentials(credentialsProvider)
-                .withRegion("us-west-1")
-                .build();
-
-        DynamoDB dynamoDB = new DynamoDB(client);
-        Table table = dynamoDB.getTable("Covid19Data");
-        Item item = table.getItem("State",name);
-        
-        //initialize instance variables
-        stateName = item.getString("State");
-        totalCases = item.getString("Number of COVID-19 Cases");
-        casesPerMillion = item.getString("COVID-19 Cases per 1,000,000 Population");
-        totalDeaths = item.getString("Deaths from COVID-19");
-        deathsPerMillion = item.getString("COVID-19 Deaths per 1,000,000 Population");
+		stateName = name;
+		totalCases = Double.parseDouble(totCases);
+		totalDeaths = Double.parseDouble(deathTotal);
+		distancingMeasures = measuresDistancing;
+		totalOver65 = Double.parseDouble(over65);
+		percentOlderAdults = Double.parseDouble(oldPercent);
+		
+		
 	}
 	
 	public String getName()
 	{return stateName;}
 	
 	public String getTotalCases()
-	{return totalCases;}
-	
-	public String getCasesPerMillion()
-	{return casesPerMillion;}
+	{return Double.toString(totalCases);}
 	
 	public String getTotalDeaths()
-	{return totalDeaths;}
+	{return Double.toString(totalDeaths);}
 	
-	public String getDeathsPerMillion()
-	{return deathsPerMillion;}
+	public String getDistancingMeasures()
+	{return distancingMeasures;}
 	
+	public String getTotalOver65()
+	{return Double.toString(totalOver65);}
+	
+	public String getPercentOlderAdults()
+	{return Double.toString(percentOlderAdults);}
+	
+	public String toString()
+	{return stateName;}
 }
