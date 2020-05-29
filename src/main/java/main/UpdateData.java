@@ -1,7 +1,10 @@
-package dataPull;
+package main;
 
 import DynamoDB.*;
 import com.amazonaws.services.dynamodbv2.document.DynamoDB;
+import dataPull.CaseDeathData;
+import dataPull.GetHTML;
+import dataPull.KffDataToJSON;
 import org.eclipse.jetty.util.IO;
 import org.json.JSONObject;
 import org.jsoup.nodes.Document;
