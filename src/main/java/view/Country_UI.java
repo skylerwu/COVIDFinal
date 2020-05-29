@@ -85,7 +85,7 @@ public class Country_UI extends JFrame {
 			lblTotalCases.setBounds(26, 101, 193, 60);
 			getContentPane().add(lblTotalCases);
 			
-			JLabel label = new JLabel(Double.toString(Control.getTotalCasesUS()));
+			JLabel label = new JLabel(/*Double.toString(Control.getTotalCasesUS())*/ "#");
 			label.setFont(new Font("Tahoma", Font.PLAIN, 25));
 			label.setBounds(216, 104, 211, 55);
 			getContentPane().add(label);
@@ -95,7 +95,7 @@ public class Country_UI extends JFrame {
 			lblTotalDeaths.setBounds(939, 101, 211, 60);
 			getContentPane().add(lblTotalDeaths);
 			
-			JLabel label_2 = new JLabel(Double.toString(Control.getTotalDeathsUS()));
+			JLabel label_2 = new JLabel(/*Double.toString(Control.getTotalDeathsUS())*/ "#");
 			label_2.setFont(new Font("Tahoma", Font.PLAIN, 25));
 			label_2.setBounds(1165, 104, 285, 55);
 			getContentPane().add(label_2);

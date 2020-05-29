@@ -250,7 +250,7 @@ public class Control {
 	
 	
 	
-	public static double getTotalCasesUS()
+	/*public static double getTotalCasesUS()
 	{
 		double totalCasesUS = 0;
 		fillAllStates();
@@ -272,7 +272,7 @@ public class Control {
 		}
 		
 		return totalDeathsUS;
-	}
+	}*/
 	
 	public static String removePercent(String input)
 	{
