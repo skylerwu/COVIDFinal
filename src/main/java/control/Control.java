@@ -26,7 +26,7 @@ import com.amazonaws.services.dynamodbv2.document.utils.NameMap;
 import com.amazonaws.services.dynamodbv2.document.utils.ValueMap;
 
 public class Control {
-	private static ArrayList<State> allStates = new ArrayList<>();
+	public static ArrayList<State> allStates = new ArrayList<>();
 	
 	@SuppressWarnings("unused")
 	public static void fillAllStates()
@@ -83,7 +83,7 @@ public class Control {
               //remove the "United States" + "X Islands" states:
                 for(int i=0; i<allStates.size(); i++)
                 {
-                	if(allStates.get(i).getName().equals("UNITED STATES") || allStates.get(i).getName().contains("ISLANDS"))
+                	if(allStates.get(i).getStateName().equals("UNITED STATES") || allStates.get(i).getStateName().contains("ISLANDS"))
                 	{
                 		allStates.remove(i);
                 	}
@@ -109,7 +109,7 @@ public class Control {
 		int i = 0;
 		while(i<allStates.size())
 		{
-			if(allStates.get(i).getName().equalsIgnoreCase(stateName))
+			if(allStates.get(i).getStateName().equalsIgnoreCase(stateName))
 			{
 				return allStates.get(i);
 			}
@@ -130,22 +130,22 @@ public class Control {
 				//insert sorting code here.
 				for(int j=0; j<allStates.size(); j++)
 				{
-					int minIndex = j;
+					int maxIndex = j;
 					for(int k = j+1; k<allStates.size(); k++)
 					{
-						if(Double.parseDouble(allStates.get(k).getTotalCases())>Double.parseDouble(allStates.get(minIndex).getTotalCases()))
+						if(Double.parseDouble(allStates.get(k).getTotalCases())>Double.parseDouble(allStates.get(maxIndex).getTotalCases()))
 						{
-							minIndex = k;
+							maxIndex = k;
 						}
 					}
 					
 					State temp = allStates.get(j);
-					allStates.set(j, allStates.get(minIndex));
-					allStates.set(minIndex, temp);
+					allStates.set(j, allStates.get(maxIndex));
+					allStates.set(maxIndex, temp);
 				}
 				for(State state: allStates)
 				{
-					System.out.println(state.getName() + ": " + state.getTotalCases());
+					System.out.println(state.getStateName() + ": " + state.getTotalCases());
 				}
 				break;
 			}
@@ -154,22 +154,22 @@ public class Control {
 				//insert sorting code here.
 				for(int j=0; j<allStates.size(); j++)
 				{
-					int minIndex = j;
+					int maxIndex = j;
 					for(int k = j+1; k<allStates.size(); k++)
 					{
-						if(Double.parseDouble(allStates.get(k).getTotalDeaths())>Double.parseDouble(allStates.get(minIndex).getTotalDeaths()))
+						if(Double.parseDouble(allStates.get(k).getTotalDeaths())>Double.parseDouble(allStates.get(maxIndex).getTotalDeaths()))
 						{
-							minIndex = k;
+							maxIndex = k;
 						}
 					}
 					
 					State temp = allStates.get(j);
-					allStates.set(j, allStates.get(minIndex));
-					allStates.set(minIndex, temp);
+					allStates.set(j, allStates.get(maxIndex));
+					allStates.set(maxIndex, temp);
 				}
 				for(State state: allStates)
 				{
-					System.out.println(state.getName() + ": " + state.getTotalDeaths());
+					System.out.println(state.getStateName() + ": " + state.getTotalDeaths());
 				}
 				break;
 			}
@@ -193,7 +193,7 @@ public class Control {
 				}
 				for(State state: allStates)
 				{
-					System.out.println(state.getName() + ": " + state.getTotalOver65());
+					System.out.println(state.getStateName() + ": " + state.getTotalOver65());
 				}
 				break;
 			}
@@ -217,7 +217,7 @@ public class Control {
 				}
 				for(State state: allStates)
 				{
-					System.out.println(state.getName() + ": " + state.getPercentOlderAdults());
+					System.out.println(state.getStateName() + ": " + state.getPercentOlderAdults());
 				}
 				break;
 			}
@@ -240,7 +240,7 @@ public class Control {
 				}
 				for(State state: allStates)
 				{
-					System.out.println(state.getName() + ": " + state.getTotalCases());
+					System.out.println(state.getStateName() + ": " + state.getTotalCases());
 				}	
 			}
 		
@@ -250,6 +250,29 @@ public class Control {
 	
 	
 	
+	public static double getTotalCasesUS()
+	{
+		double totalCasesUS = 0;
+		fillAllStates();
+		for(State s: allStates)
+		{
+			totalCasesUS += Double.parseDouble(s.getTotalCases());
+		}
+		
+		return totalCasesUS;
+	}
+	
+	public static double getTotalDeathsUS()
+	{
+		double totalDeathsUS = 0;
+		fillAllStates();
+		for(State s: allStates)
+		{
+			totalDeathsUS += Double.parseDouble(s.getTotalDeaths());
+		}
+		
+		return totalDeathsUS;
+	}
 	
 	public static String removePercent(String input)
 	{

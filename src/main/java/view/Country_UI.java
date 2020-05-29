@@ -57,7 +57,7 @@ public class Country_UI extends JFrame {
 			getContentPane().setLayout(null);
 			
 			setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-			setBounds(100, 100, 1378, 929);
+			setBounds(100, 100, 1487, 934);
 			
 			JLabel lblNewLabel_5 = new JLabel("CDC Logo");
 			lblNewLabel_5.setHorizontalAlignment(SwingConstants.CENTER);
@@ -85,9 +85,9 @@ public class Country_UI extends JFrame {
 			lblTotalCases.setBounds(26, 101, 193, 60);
 			getContentPane().add(lblTotalCases);
 			
-			JLabel label = new JLabel("#");
-			label.setFont(new Font("Tahoma", Font.PLAIN, 31));
-			label.setBounds(216, 104, 38, 55);
+			JLabel label = new JLabel(Double.toString(Control.getTotalCasesUS()));
+			label.setFont(new Font("Tahoma", Font.PLAIN, 25));
+			label.setBounds(216, 104, 211, 55);
 			getContentPane().add(label);
 			
 			JLabel lblTotalDeaths = new JLabel("TOTAL DEATHS:");
@@ -95,9 +95,9 @@ public class Country_UI extends JFrame {
 			lblTotalDeaths.setBounds(939, 101, 211, 60);
 			getContentPane().add(lblTotalDeaths);
 			
-			JLabel label_2 = new JLabel("#");
-			label_2.setFont(new Font("Tahoma", Font.PLAIN, 31));
-			label_2.setBounds(1165, 104, 38, 55);
+			JLabel label_2 = new JLabel(Double.toString(Control.getTotalDeathsUS()));
+			label_2.setFont(new Font("Tahoma", Font.PLAIN, 25));
+			label_2.setBounds(1165, 104, 285, 55);
 			getContentPane().add(label_2);
 			
 			JPanel panel = new JPanel();
@@ -113,7 +113,7 @@ public class Country_UI extends JFrame {
 			chPanel.setMouseWheelEnabled(true);
 			
 			JLabel lblMostDeaths = new JLabel("Most Deaths By State");
-			lblMostDeaths.setFont(new Font("Tahoma", Font.PLAIN, 24));
+			lblMostDeaths.setFont(new Font("Tahoma", Font.PLAIN, 26));
 			lblMostDeaths.setBounds(939, 163, 269, 66);
 			getContentPane().add(lblMostDeaths);
 			
@@ -175,7 +175,7 @@ public class Country_UI extends JFrame {
 			getContentPane().add(lblNewLabel_2_4);
 			
 			JLabel lblMostCasesBy = new JLabel("Most Cases By State");
-			lblMostCasesBy.setFont(new Font("Tahoma", Font.PLAIN, 24));
+			lblMostCasesBy.setFont(new Font("Tahoma", Font.PLAIN, 26));
 			lblMostCasesBy.setBounds(26, 163, 269, 66);
 			getContentPane().add(lblMostCasesBy);
 			
