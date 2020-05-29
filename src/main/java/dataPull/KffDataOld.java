@@ -12,7 +12,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
 
-public class KffData {
+public class KffDataOld {
 
     public static void main(String[] args) throws Exception {
         System.out.println(pullHTML());
@@ -50,6 +50,7 @@ public class KffData {
 
         while ((line = br.readLine()) != null) {
             if (line.contains("kff-indicator-components")) {
+                System.out.println(line);
                 htmlData.add(processLine(line));
             }
         }

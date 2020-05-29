@@ -13,9 +13,9 @@ import org.jsoup.nodes.*;
 import org.jsoup.select.Elements;
 
 
-public class DataToJSON {
+public class CaseDeathData {
 
-    private static String readWebsite() throws Exception{
+    public static String readWebsite() throws Exception{
         // Make a URL to the web page
         URL url = new URL("https://github.com/nytimes/covid-19-data/blob/master/us-states.csv");
 
@@ -63,41 +63,31 @@ public class DataToJSON {
         return htmlData;
     }
 
-    public static String TableToJson(String source) throws JSONException {
+    public static JSONObject TableToJson(String source) throws JSONException {
         Document doc = Jsoup.parse(source);
         JSONObject jsonParentObject = new JSONObject();
         for (Element table : doc.select("tbody")) {
             for (Element row : table.select("tr")) {
                 JSONObject jsonObject = new JSONObject();
                 Elements tds = row.select("td");
-                String Date = tds.get(0).text();
                 String State = tds.get(1).text();
                 String Cases = tds.get(3).text();
                 String Deaths = tds.get(4).text();
-                jsonObject.put("Date", Date);
-                jsonObject.put("State", State);
                 jsonObject.put("Cases", Cases);
                 jsonObject.put("Deaths", Deaths);
-                jsonParentObject.put(State +":"+ Date, jsonObject);
+                jsonParentObject.put(State.toUpperCase(), jsonObject);
             }
         }
-        return jsonParentObject.toString();
+        return jsonParentObject;
     }
 
-    private static String removeDigits(String inp) {
-        String filteredString = inp;
-        for (int i=0; i<10; i++) {
-            filteredString.replace(i + "", "");
-        }
-        return (filteredString);
-    }
 
     public static void main(String[] args) {
         try {
             System.out.println("reading data");
             String htmldata = readWebsite();
             System.out.println(htmldata);
-            String json = TableToJson(htmldata);
+            String json = TableToJson(htmldata).toString();
             System.out.println(json);
         }
         catch (Exception e) {

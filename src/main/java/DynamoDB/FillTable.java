@@ -1,25 +1,27 @@
 package DynamoDB;
 
 
-import java.io.File;
-import java.io.StringWriter;
 import java.util.Iterator;
 import java.util.Map;
 
 import com.amazonaws.AmazonClientException;
 import com.amazonaws.auth.profile.ProfileCredentialsProvider;
-import com.amazonaws.client.builder.AwsClientBuilder;
-import com.amazonaws.regions.Regions;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
-import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
 import com.amazonaws.services.dynamodbv2.document.DynamoDB;
 import com.amazonaws.services.dynamodbv2.document.Item;
 import com.amazonaws.services.dynamodbv2.document.Table;
+import dataPull.KffDataToJSON;
 import org.json.JSONObject;
+import org.jsoup.nodes.Document;
 
 public class FillTable {
     public static void main(String[] args) throws Exception {
+        updateTable(KffDataToJSON.htmlToJSON());
+    }
+
+    public static void updateTable(JSONObject jsonData) {
+
         ProfileCredentialsProvider credentialsProvider = new ProfileCredentialsProvider();
         try {
             credentialsProvider.getCredentials();
@@ -37,9 +39,8 @@ public class FillTable {
 
         DynamoDB dynamoDB = new DynamoDB(client);
 
-        Table data = dynamoDB.getTable("Covid19Data");
+        Table table = dynamoDB.getTable("Covid19Data");
 
-        JSONObject jsonData = dataPull.KffData.dataMain();
         Iterator<String> iter = jsonData.keys();
 
         while (iter.hasNext()) {
@@ -55,13 +56,13 @@ public class FillTable {
                 }
 
                 //data.putItem(new Item().withPrimaryKey("State", state).withJSON("info",
-                        //jsonData.getJSONObject(state).toString()));
-                data.putItem(row);
+                //jsonData.getJSONObject(state).toString()));
+                table.putItem(row);
                 System.out.println("PutItem succeeded: " + state);
 
             }
             catch (Exception e) {
-                System.err.println("Unable to add movie: " + state);
+                System.err.println("Unable to add state: " + state);
                 System.err.println(e.getMessage());
                 break;
             }
