@@ -119,7 +119,7 @@ public class Control {
 		return null;
 	}
 	
-	enum Criteria{TOTALCASES,TOTALDEATHS,TOTALOVER65,PERCENTOVER65}
+	public enum Criteria{TOTALCASES,TOTALDEATHS,TOTALOVER65,PERCENTOVER65}
 	
 	//MUST RUN fillAllStates() FIRST!
 	public static void sortAllStates(Criteria crit)
@@ -133,7 +133,7 @@ public class Control {
 					int minIndex = j;
 					for(int k = j+1; k<allStates.size(); k++)
 					{
-						if(Double.parseDouble(allStates.get(k).getTotalCases())<Double.parseDouble(allStates.get(minIndex).getTotalCases()))
+						if(Double.parseDouble(allStates.get(k).getTotalCases())>Double.parseDouble(allStates.get(minIndex).getTotalCases()))
 						{
 							minIndex = k;
 						}
@@ -157,7 +157,7 @@ public class Control {
 					int minIndex = j;
 					for(int k = j+1; k<allStates.size(); k++)
 					{
-						if(Double.parseDouble(allStates.get(k).getTotalDeaths())<Double.parseDouble(allStates.get(minIndex).getTotalDeaths()))
+						if(Double.parseDouble(allStates.get(k).getTotalDeaths())>Double.parseDouble(allStates.get(minIndex).getTotalDeaths()))
 						{
 							minIndex = k;
 						}
