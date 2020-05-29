@@ -86,6 +86,62 @@ public class Control {
         
 	
 }
+	
+	
+	
+	//must have called fillAllStates()
+	public static State getStateObject(String stateName)
+	{
+		int i = 0;
+		while(i<allStates.size())
+		{
+			if(allStates.get(i).getName().equalsIgnoreCase(stateName))
+			{
+				return allStates.get(i);
+			}
+			i++;
+		}
+		
+		return null;
+	}
+	
+	enum Criteria{TOTALCASES,TOTALDEATHS,TOTALOVER65,PERCENTOVER65}
+	
+	public static void sortAllStates(Criteria crit)
+	{
+		switch(crit) {
+		case TOTALCASES:
+			{
+				//insert sorting code here.
+				break;
+			}
+		case TOTALDEATHS:
+			{
+				//insert sorting code here.
+				break;
+			}
+		case TOTALOVER65:
+			{
+				//insert sorting code here.
+				break;
+			}
+		case PERCENTOVER65:
+			{
+				//insert sorting code here.
+				break;
+			}
+		default:
+			{
+				//insert default option here.	
+			}
+		
+		}
+			
+	}
+	
+	
+	
+	
 	public static String removePercent(String input)
 	{
 		return input.substring(0,input.length());
