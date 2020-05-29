@@ -26,7 +26,7 @@ import com.amazonaws.services.dynamodbv2.document.utils.NameMap;
 import com.amazonaws.services.dynamodbv2.document.utils.ValueMap;
 
 public class Control {
-	private static ArrayList<State> allStates;
+	private static ArrayList<State> allStates = new ArrayList<>();
 	
 	public static void fillAllStates()
 	{
@@ -50,42 +50,47 @@ public class Control {
 
         ScanSpec scanSpec = new ScanSpec();
 
-            try {
+
                 ItemCollection<ScanOutcome> items = table.scan(scanSpec);
 
                 Iterator<Item> iter = items.iterator();
                 while (iter.hasNext()) {
                     Item item = iter.next();
-                    
+
                     //create the String distancingMeasures
                     //create State object and add to ArrayList
-                    String atHome = "Stay at Home Order: " + item.getString("Stay at Home Order");
-                    String largeGatherings = "Ban on Large Gatherings: " + item.getString("Large Gatherings Ban");
-                    String businessClosures = "Non-Essential Business Closures: " + item.getString("Non-Essential Business Closures");
+                    String atHome = "Stay at Home Order: " + insertAttribute(item, "Stay at Home Order");
+                    String largeGatherings = "Ban on Large Gatherings: " + insertAttribute(item, "Large Gatherings Ban");
+                    String businessClosures = "Non-Essential Business Closures: " + insertAttribute(item, "Non-Essential Business Closures");
                     String distancingMeasures = atHome + " | " + largeGatherings + " | " + businessClosures;
-                    String totalOver65 = removeCommas(item.getString("Adults Age 65 and Older__Total number, adults age 65 and older"));
-                    String percentOver65 = removePercent(item.getString("Adults Age 65 and Older__Older adults, as a share of all at-risk adults"));
-                    
+                    String totalOver65 = removeCommas(insertAttribute(item, "Adults Age 65 and Older__Total number, adults age 65 and older"));
+                    String percentOver65 = removePercent(insertAttribute(item, "Adults Age 65 and Older__Older adults, as a share of all at-risk adults"));
+
                     allStates.add(
                     		new State(
-                    				item.getString("State"), 
-                    				item.getString("Cases"), 
-                    				item.getString("Deaths"),
+                    				insertAttribute(item, "State"),
+                    				insertAttribute(item, "Cases"),
+                    				insertAttribute(item, "Deaths"),
                     				distancingMeasures,
                     				totalOver65,
                     				percentOver65)
                     		);
-                    System.out.println(allStates.get(allStates.size()-1));
-                }
+                    System.out.println(allStates.get(allStates.size()-1).toString());
 
-            }
-            catch (Exception e) {
-                System.err.println("Unable to scan the table:");
-                System.err.println(e.getMessage());
+                //System.err.println("Unable to scan the table:");
             }
         
 	
-}
+	}
+
+	private static String insertAttribute (Item item, String attribute) {
+		if (item.isPresent(attribute)) {
+			return item.getString(attribute);
+		}
+		else {
+			return "0";
+		}
+	}
 	
 	
 	
@@ -144,12 +149,12 @@ public class Control {
 	
 	public static String removePercent(String input)
 	{
-		return input.substring(0,input.length());
+		return input.replace("%", "");
 	}
 	
 	public static String removeCommas(String input)
 	{
-		return input.replaceAll(",", "");
+		return input.replace(",", "");
 	}
 	
 	public static void main(String[] args)

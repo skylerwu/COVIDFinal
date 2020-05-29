@@ -2,6 +2,7 @@ package control;
 
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.zip.DeflaterOutputStream;
 
 import com.amazonaws.AmazonClientException;
 import com.amazonaws.auth.profile.ProfileCredentialsProvider;
@@ -28,15 +29,29 @@ public class State {
 	String measuresDistancing, String over65, String oldPercent)
 	{
 		stateName = name;
-		totalCases = Double.parseDouble(totCases);
-		totalDeaths = Double.parseDouble(deathTotal);
-		distancingMeasures = measuresDistancing;
-		totalOver65 = Double.parseDouble(over65);
-		percentOlderAdults = Double.parseDouble(oldPercent);
-		
-		
+		if (totCases != null) {
+			totalCases = Double.parseDouble(totCases);
+		}
+
+		if (deathTotal != null) {
+			totalDeaths = Double.parseDouble(deathTotal);
+		}
+
+		if (!measuresDistancing.isEmpty()) {
+			distancingMeasures = measuresDistancing;
+		}
+		else {
+			distancingMeasures = "";
+		}
+
+		if (!over65.isEmpty()) {
+			totalOver65 = Double.parseDouble(over65);
+		}
+		if (!oldPercent.isEmpty()) {
+			percentOlderAdults = Double.parseDouble(oldPercent);
+		}
 	}
-	
+
 	public String getName()
 	{return stateName;}
 	
