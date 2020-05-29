@@ -52,7 +52,7 @@ public class State {
 		}
 	}
 
-	public String getName()
+	public String getStateName()
 	{return stateName;}
 	
 	public String getTotalCases()
