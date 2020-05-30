@@ -23,6 +23,12 @@ import javax.swing.JTextPane;
 public class State_UI extends JFrame {
 	int i = 0;
 	JLabel lblNewLabel_1;
+	JLabel label;
+	JLabel label_1;
+	JLabel label_2;
+	JLabel label_3;
+	JTextArea txtrPreventionPolicies;
+	
 		public static void main(String[] args) {
 			EventQueue.invokeLater(new Runnable() {
 				public void run() {
@@ -49,11 +55,6 @@ public class State_UI extends JFrame {
 			getContentPane().add(lblNewLabel_5);
 			lblNewLabel_5.setIcon(new ImageIcon("CDC.png"));
 			
-			JLabel lblNewLabel = new JLabel("Picture of State");
-			lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-			lblNewLabel.setBounds(30, 88, 345, 219);
-			getContentPane().add(lblNewLabel);
-			
 			lblNewLabel_1 = new JLabel("State Name");
 			lblNewLabel_1.setFont(new Font("Big Caslon", Font.BOLD, 40));
 			lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
@@ -61,47 +62,52 @@ public class State_UI extends JFrame {
 			getContentPane().add(lblNewLabel_1);
 			
 			JLabel lblCases = new JLabel("# Cases: ");
-			lblCases.setBounds(400, 88, 112, 16);
+			lblCases.setFont(new Font("Tahoma", Font.PLAIN, 30));
+			lblCases.setBounds(137, 97, 139, 43);
 			getContentPane().add(lblCases);
 			
 			JLabel lblNewLabel_2 = new JLabel("# Dead:");
-			lblNewLabel_2.setBounds(600, 88, 96, 16);
+			lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 30));
+			lblNewLabel_2.setBounds(553, 93, 126, 55);
 			getContentPane().add(lblNewLabel_2);
 			
-			JLabel lblNewLabel_3 = new JLabel("# Recovered:");
-			lblNewLabel_3.setBounds(789, 88, 138, 16);
-			getContentPane().add(lblNewLabel_3);
-			
-			JLabel lblOfPop = new JLabel("% of Pop > 80:");
-			lblOfPop.setBounds(400, 177, 126, 16);
+			JLabel lblOfPop = new JLabel("Total People Over 65:");
+			lblOfPop.setFont(new Font("Tahoma", Font.PLAIN, 26));
+			lblOfPop.setBounds(137, 194, 327, 43);
 			getContentPane().add(lblOfPop);
 			
-			JLabel lblOfPop_1 = new JLabel("% of Pop 40 - 60:");
-			lblOfPop_1.setBounds(602, 177, 138, 16);
-			getContentPane().add(lblOfPop_1);
-			
-			JLabel lblOfPop_2 = new JLabel("% of Pop < 40:");
-			lblOfPop_2.setBounds(791, 177, 115, 16);
+			JLabel lblOfPop_2 = new JLabel("% of Population Older Adults:");
+			lblOfPop_2.setFont(new Font("Tahoma", Font.PLAIN, 26));
+			lblOfPop_2.setBounds(545, 194, 354, 43);
 			getContentPane().add(lblOfPop_2);
 			
-			JLabel lblNewLabel_4 = new JLabel("Population Density:");
-			lblNewLabel_4.setBounds(400, 265, 163, 16);
-			getContentPane().add(lblNewLabel_4);
-			
-			JTextArea txtrMajorEducationalInstitutions = new JTextArea();
-			txtrMajorEducationalInstitutions.setText("Major Educational Institutions Closed: ");
-			txtrMajorEducationalInstitutions.setBounds(37, 330, 890, 102);
-			getContentPane().add(txtrMajorEducationalInstitutions);
-			
-			JTextArea txtrCorporationsAtRisk = new JTextArea();
-			txtrCorporationsAtRisk.setText("Corporations At Risk:");
-			txtrCorporationsAtRisk.setBounds(36, 467, 891, 102);
-			getContentPane().add(txtrCorporationsAtRisk);
-			
-			JTextArea txtrPreventionPolicies = new JTextArea();
-			txtrPreventionPolicies.setText("Prevention Policies:");
-			txtrPreventionPolicies.setBounds(38, 599, 889, 86);
+			txtrPreventionPolicies = new JTextArea();
+			txtrPreventionPolicies.setFont(new Font("Tahoma", Font.PLAIN, 26));
+			txtrPreventionPolicies.setText("Social Distancing Measures:");
+			txtrPreventionPolicies.setBounds(31, 357, 889, 384);
+			txtrPreventionPolicies.setWrapStyleWord(true);
+			txtrPreventionPolicies.setLineWrap(true);
 			getContentPane().add(txtrPreventionPolicies);
+			
+			label = new JLabel("#");
+			label.setFont(new Font("Tahoma", Font.PLAIN, 30));
+			label.setBounds(266, 101, 139, 34);
+			getContentPane().add(label);
+			
+			label_1 = new JLabel("#");
+			label_1.setFont(new Font("Tahoma", Font.PLAIN, 30));
+			label_1.setBounds(683, 103, 139, 34);
+			getContentPane().add(label_1);
+			
+			label_2 = new JLabel("#");
+			label_2.setFont(new Font("Tahoma", Font.PLAIN, 30));
+			label_2.setBounds(222, 253, 139, 34);
+			getContentPane().add(label_2);
+			
+			label_3 = new JLabel("#");
+			label_3.setFont(new Font("Tahoma", Font.PLAIN, 30));
+			label_3.setBounds(683, 253, 139, 34);
+			getContentPane().add(label_3);
 			
 		}
 }
