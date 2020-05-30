@@ -250,10 +250,14 @@ public class Control {
 	
 	
 	
-	/*public static double getTotalCasesUS()
+	public static double getTotalCasesUS()
 	{
 		double totalCasesUS = 0;
-		fillAllStates();
+		if(allStates.size() ==0)
+		{
+			fillAllStates();
+		}
+		
 		for(State s: allStates)
 		{
 			totalCasesUS += Double.parseDouble(s.getTotalCases());
@@ -265,14 +269,17 @@ public class Control {
 	public static double getTotalDeathsUS()
 	{
 		double totalDeathsUS = 0;
-		fillAllStates();
+		if(allStates.size() ==0)
+		{
+			fillAllStates();
+		}
 		for(State s: allStates)
 		{
 			totalDeathsUS += Double.parseDouble(s.getTotalDeaths());
 		}
 		
 		return totalDeathsUS;
-	}*/
+	}
 	
 	public static String removePercent(String input)
 	{

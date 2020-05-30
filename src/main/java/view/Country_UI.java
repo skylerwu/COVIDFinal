@@ -13,10 +13,13 @@ import javax.swing.JLabel;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 import org.jfree.ui.RefineryUtilities;
 
 import javax.swing.JButton;
+import javax.swing.JDialog;
+
 import java.awt.List;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -39,6 +42,7 @@ import org.jfree.ui.RefineryUtilities;
 public class Country_UI extends JFrame {
 	int i = 0;
 	public JTextField txtSearchForA;
+	static Country_UI frame;
 	
 	public State ob;
 	
@@ -46,7 +50,7 @@ public class Country_UI extends JFrame {
 			EventQueue.invokeLater(new Runnable() {
 				public void run() {
 					try {
-						Country_UI frame = new Country_UI();
+						/*Country_UI*/ frame = new Country_UI();
 						frame.setVisible(true);
 					} catch (Exception e) {
 						e.printStackTrace();
@@ -68,6 +72,7 @@ public class Country_UI extends JFrame {
 			getContentPane().add(lblNewLabel_5);
 			lblNewLabel_5.setIcon(new ImageIcon("CDC.png"));
 			
+			//FILL ARRAYLIST WITH STATE OBJECTS
 			Control.fillAllStates();
 			
 			JLabel lblNewLabel_1 = new JLabel("CDC Covid-19 Case Database");
@@ -88,7 +93,7 @@ public class Country_UI extends JFrame {
 			lblTotalCases.setBounds(26, 101, 193, 60);
 			getContentPane().add(lblTotalCases);
 			
-			JLabel label = new JLabel(/*Double.toString(Control.getTotalCasesUS())*/ "#");
+			JLabel label = new JLabel(Double.toString(Control.getTotalCasesUS()));
 			label.setFont(new Font("Tahoma", Font.PLAIN, 25));
 			label.setBounds(216, 104, 211, 55);
 			getContentPane().add(label);
@@ -98,7 +103,7 @@ public class Country_UI extends JFrame {
 			lblTotalDeaths.setBounds(939, 101, 211, 60);
 			getContentPane().add(lblTotalDeaths);
 			
-			JLabel label_2 = new JLabel(/*Double.toString(Control.getTotalDeathsUS())*/ "#");
+			JLabel label_2 = new JLabel(Double.toString(Control.getTotalDeathsUS()));
 			label_2.setFont(new Font("Tahoma", Font.PLAIN, 25));
 			label_2.setBounds(1165, 104, 285, 55);
 			getContentPane().add(label_2);
@@ -145,7 +150,9 @@ public class Country_UI extends JFrame {
 			label_3_4.setBounds(939, 444, 38, 55);
 			getContentPane().add(label_3_4);
 			
+
 			//TOP DEATHS
+			
 			Control.sortAllStates(Criteria.TOTALDEATHS);
 			//state 1 cases
 			JLabel lblNewLabel_2 = new JLabel((Control.allStates.get(0)).getStateName());
@@ -247,30 +254,10 @@ public class Country_UI extends JFrame {
 			getContentPane().add(txtSearchForA);
 			txtSearchForA.setColumns(10);
 			
-			/*String input = txtSearchForA.getText();
-			String actual = (input.substring(0,1)).toUpperCase() + input.substring(1);
-			//Control.fillAllStates();
-			ob = Control.getStateObject(actual);*/
 			
 			JButton btnSearch = new JButton("Search");
 			btnSearch.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
-					
-					//need to add check if search input is in data set 
-						/*String input = txtSearchForA.getText();
-						String actual = (input.substring(0,1)).toUpperCase() + input.substring(1);
-						Control.fillAllStates();
-						State ob = Control.getStateObject(actual);
-						if(Control.allStates.indexOf(ob)>=0)
-						{
-							State_UI f = new State_UI();
-							//f.lblNewLabel_1.setText(actual);
-							f.setVisible(true);
-						}
-						else
-						{
-							//add later
-						}*/
 					setData();
 	
 				}
@@ -303,7 +290,11 @@ public class Country_UI extends JFrame {
 			}
 			else
 			{
-				//add later
+
+				JOptionPane.showMessageDialog(frame,
+					    "Oops! This is not a valid state name :(",
+					    "ERROR",
+					    JOptionPane.ERROR_MESSAGE);
 			}
 		}
 }
