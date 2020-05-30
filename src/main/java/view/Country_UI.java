@@ -38,7 +38,10 @@ import org.jfree.ui.RefineryUtilities;
 
 public class Country_UI extends JFrame {
 	int i = 0;
-
+	public JTextField txtSearchForA;
+	
+	public State ob;
+	
 		public static void main(String[] args) {
 			EventQueue.invokeLater(new Runnable() {
 				public void run() {
@@ -106,7 +109,7 @@ public class Country_UI extends JFrame {
 
 			getContentPane().add(panel);
 
-			
+			//test
 			ChartPanel chPanel = new ChartPanel(chart.getChart());
 			panel.add(chPanel);
 			chPanel.setPreferredSize(new Dimension(560, 367)); //size according to my window
@@ -236,7 +239,7 @@ public class Country_UI extends JFrame {
 			lblNewLabel_2_9.setBounds(55, 461, 230, 20);
 			getContentPane().add(lblNewLabel_2_9);
 			
-			JTextField txtSearchForA = new JTextField();
+			/*JTextField*/ txtSearchForA = new JTextField();
 			txtSearchForA.setForeground(Color.BLACK);
 			txtSearchForA.setFont(new Font("Big Caslon", Font.PLAIN, 16));
 			txtSearchForA.setText("Search for a State:");
@@ -244,21 +247,31 @@ public class Country_UI extends JFrame {
 			getContentPane().add(txtSearchForA);
 			txtSearchForA.setColumns(10);
 			
+			/*String input = txtSearchForA.getText();
+			String actual = (input.substring(0,1)).toUpperCase() + input.substring(1);
+			//Control.fillAllStates();
+			ob = Control.getStateObject(actual);*/
+			
 			JButton btnSearch = new JButton("Search");
 			btnSearch.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 					
-					//need to add check if search input is in data set later
-						String input = txtSearchForA.getText();
+					//need to add check if search input is in data set 
+						/*String input = txtSearchForA.getText();
 						String actual = (input.substring(0,1)).toUpperCase() + input.substring(1);
 						Control.fillAllStates();
 						State ob = Control.getStateObject(actual);
 						if(Control.allStates.indexOf(ob)>=0)
 						{
 							State_UI f = new State_UI();
-							f.lblNewLabel_1.setText(actual);
+							//f.lblNewLabel_1.setText(actual);
 							f.setVisible(true);
 						}
+						else
+						{
+							//add later
+						}*/
+					setData();
 	
 				}
 			});
@@ -269,6 +282,29 @@ public class Country_UI extends JFrame {
 			getContentPane().add(btnSearch);
 
 			
+		}
+		
+		public void setData()
+		{
+			String input = txtSearchForA.getText();
+			String actual = (input.substring(0,1)).toUpperCase() + input.substring(1);
+			Control.fillAllStates();
+			State ob = Control.getStateObject(actual);
+			if(Control.allStates.indexOf(ob)>=0)
+			{
+				State_UI f = new State_UI();
+				f.lblNewLabel_1.setText(actual);
+				f.label.setText(ob.getTotalCases());
+				f.label_1.setText(ob.getTotalDeaths());
+				f.label_2.setText(ob.getTotalOver65());
+				f.label_3.setText(ob.getPercentOlderAdults()+ " %");
+				f.txtrPreventionPolicies.setText("Social Distancing Measures: " + ob.getDistancingMeasures());
+				f.setVisible(true);
+			}
+			else
+			{
+				//add later
+			}
 		}
 }
 
