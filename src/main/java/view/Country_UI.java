@@ -274,7 +274,7 @@ public class Country_UI extends JFrame {
 		public void setData()
 		{
 			String input = txtSearchForA.getText();
-			String actual = (input.substring(0,1)).toUpperCase() + input.substring(1);
+			String actual = (input.substring(0,1)).toUpperCase() + input.substring(1).toLowerCase();
 			Control.fillAllStates();
 			State ob = Control.getStateObject(actual);
 			if(Control.allStates.indexOf(ob)>=0)
