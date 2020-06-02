@@ -9,12 +9,16 @@ import org.jfree.data.general.DefaultPieDataset;
 import org.jfree.data.general.PieDataset;
 import org.jfree.ui.ApplicationFrame;
 import org.jfree.ui.RefineryUtilities;
+
+import control.Control;
+import control.Control.Criteria;
+import control.State;
  
-public class COVIDPieChartTest extends ApplicationFrame {
+public class COVIDPieChartTotalCases extends ApplicationFrame {
 	
 	private static JFreeChart chart;
    
-   public COVIDPieChartTest( String title ) {
+   public COVIDPieChartTotalCases( String title ) {
       super( title ); 
       setContentPane(createDemoPanel( ));
    }
@@ -22,10 +26,16 @@ public class COVIDPieChartTest extends ApplicationFrame {
    //Data is completely made up. DO NOT ACTUALLY USE!
    private static PieDataset createDataset( ) {
       DefaultPieDataset dataset = new DefaultPieDataset( );
-      dataset.setValue( "New York" , 40);  
+      
+      for(State location: Control.allStates)
+      {
+    	  dataset.setValue(location.getStateName(), Double.parseDouble(location.getTotalCases()));
+      }
+      
+      /*dataset.setValue( "New York" , 40);  
       dataset.setValue( "California" , 20);   
       dataset.setValue( "Washington" , 20);    
-      dataset.setValue( "Other States" , 10);  
+      dataset.setValue( "Other States" , 10);*/  
       return dataset;         
    }
    
@@ -51,7 +61,9 @@ public class COVIDPieChartTest extends ApplicationFrame {
    }
 
    public static void main( String[ ] args ) {
-      COVIDPieChartTest demo = new COVIDPieChartTest( "Distribution of COVID-19 Cases" );  
+	   Control.fillAllStates();
+	   Control.sortAllStates(Criteria.TOTALCASES);
+	   COVIDPieChartTotalCases demo = new COVIDPieChartTotalCases( "Distribution of COVID-19 Cases" );  
       demo.setSize( 560 , 367 );    
       RefineryUtilities.centerFrameOnScreen( demo );    
       demo.setVisible( true ); 

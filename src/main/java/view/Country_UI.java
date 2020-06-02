@@ -80,7 +80,7 @@ public class Country_UI extends JFrame {
 			lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
 			lblNewLabel_1.setBounds(300, 27, 560, 55);
 			getContentPane().add(lblNewLabel_1);
-			COVIDPieChartTest chart = new COVIDPieChartTest("Distribution of COVID-19 Cases");
+			COVIDPieChartTotalCases chart = new COVIDPieChartTotalCases("Distribution of COVID-19 Cases");
 
 			JLabel lblNewLabel = new JLabel("US Map");
 			lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
