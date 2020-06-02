@@ -64,7 +64,7 @@ public class Country_UI extends JFrame {
 			getContentPane().setLayout(null);
 			
 			setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-			setBounds(100, 100, 1487, 934);
+			setBounds(100, 100, 1532, 985);
 			
 			JLabel lblNewLabel_5 = new JLabel("CDC Logo");
 			lblNewLabel_5.setHorizontalAlignment(SwingConstants.CENTER);
@@ -80,13 +80,8 @@ public class Country_UI extends JFrame {
 			lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
 			lblNewLabel_1.setBounds(300, 27, 560, 55);
 			getContentPane().add(lblNewLabel_1);
-			COVIDPieChartTotalCases chart = new COVIDPieChartTotalCases("Distribution of COVID-19 Cases");
-
-			JLabel lblNewLabel = new JLabel("US Map");
-			lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-			lblNewLabel.setBounds(386, 125, 342, 250);
-			getContentPane().add(lblNewLabel);
-			lblNewLabel.setIcon(new ImageIcon("corona.jpg"));
+			
+			
 			
 			JLabel lblTotalCases = new JLabel("TOTAL CASES:");
 			lblTotalCases.setFont(new Font("Tahoma", Font.PLAIN, 29));
@@ -100,54 +95,48 @@ public class Country_UI extends JFrame {
 			
 			JLabel lblTotalDeaths = new JLabel("TOTAL DEATHS:");
 			lblTotalDeaths.setFont(new Font("Tahoma", Font.PLAIN, 29));
-			lblTotalDeaths.setBounds(939, 101, 211, 60);
+			lblTotalDeaths.setBounds(1025, 101, 211, 60);
 			getContentPane().add(lblTotalDeaths);
 			
 			JLabel label_2 = new JLabel(Double.toString(Control.getTotalDeathsUS()));
 			label_2.setFont(new Font("Tahoma", Font.PLAIN, 25));
-			label_2.setBounds(1165, 104, 285, 55);
+			label_2.setBounds(1249, 106, 285, 55);
 			getContentPane().add(label_2);
+
+		
+			COVIDPieChartTotalCases chart = new COVIDPieChartTotalCases("Distribution of COVID-19 Cases");
+			COVIDPieChartTotalDeaths chart2 = new COVIDPieChartTotalDeaths("Distribution of COVID-19 Deaths");
 			
-			JPanel panel = new JPanel();
-
-			panel.setBounds(300, 400, 560, 367);
-
-			getContentPane().add(panel);
-
-			//test
-			ChartPanel chPanel = new ChartPanel(chart.getChart());
-			panel.add(chPanel);
-			chPanel.setPreferredSize(new Dimension(560, 367)); //size according to my window
-			chPanel.setMouseWheelEnabled(true);
-			
+			//top 5 deaths
 			JLabel lblMostDeaths = new JLabel("Most Deaths By State");
+			lblMostDeaths.setForeground(new Color(72, 61, 139));
 			lblMostDeaths.setFont(new Font("Tahoma", Font.PLAIN, 26));
-			lblMostDeaths.setBounds(939, 163, 269, 66);
+			lblMostDeaths.setBounds(1032, 163, 269, 66);
 			getContentPane().add(lblMostDeaths);
 			
 			JLabel label_3 = new JLabel("1.");
 			label_3.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			label_3.setBounds(939, 206, 38, 55);
+			label_3.setBounds(1042, 206, 38, 55);
 			getContentPane().add(label_3);
 			
 			JLabel label_3_1 = new JLabel("2.");
 			label_3_1.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			label_3_1.setBounds(939, 260, 38, 55);
+			label_3_1.setBounds(1042, 259, 38, 55);
 			getContentPane().add(label_3_1);
 			
 			JLabel label_3_2 = new JLabel("3.");
 			label_3_2.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			label_3_2.setBounds(939, 320, 38, 55);
+			label_3_2.setBounds(1042, 313, 38, 55);
 			getContentPane().add(label_3_2);
 			
 			JLabel label_3_3 = new JLabel("4.");
 			label_3_3.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			label_3_3.setBounds(939, 383, 38, 55);
+			label_3_3.setBounds(1042, 366, 38, 55);
 			getContentPane().add(label_3_3);
 			
 			JLabel label_3_4 = new JLabel("5.");
 			label_3_4.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			label_3_4.setBounds(939, 444, 38, 55);
+			label_3_4.setBounds(1042, 427, 38, 55);
 			getContentPane().add(label_3_4);
 			
 
@@ -157,34 +146,35 @@ public class Country_UI extends JFrame {
 			//state 1 cases
 			JLabel lblNewLabel_2 = new JLabel((Control.allStates.get(0)).getStateName());
 			lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			lblNewLabel_2.setBounds(974, 223, 229, 20);
+			lblNewLabel_2.setBounds(1086, 223, 229, 20);
 			getContentPane().add(lblNewLabel_2);
 			
 			//state 2 cases
 			JLabel lblNewLabel_2_1 = new JLabel((Control.allStates.get(1)).getStateName());
 			lblNewLabel_2_1.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			lblNewLabel_2_1.setBounds(974, 277, 211, 20);
+			lblNewLabel_2_1.setBounds(1090, 276, 211, 20);
 			getContentPane().add(lblNewLabel_2_1);
 			
 			//state 3 cases
 			JLabel lblNewLabel_2_2 = new JLabel((Control.allStates.get(2)).getStateName());
 			lblNewLabel_2_2.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			lblNewLabel_2_2.setBounds(974, 337, 229, 20);
+			lblNewLabel_2_2.setBounds(1086, 330, 229, 20);
 			getContentPane().add(lblNewLabel_2_2);
 			
 			//state 4 cases
 			JLabel lblNewLabel_2_3 = new JLabel((Control.allStates.get(3)).getStateName());
 			lblNewLabel_2_3.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			lblNewLabel_2_3.setBounds(974, 400, 248, 20);
+			lblNewLabel_2_3.setBounds(1086, 383, 248, 20);
 			getContentPane().add(lblNewLabel_2_3);
 			
 			//state 5 cases
 			JLabel lblNewLabel_2_4 = new JLabel((Control.allStates.get(4)).getStateName());
 			lblNewLabel_2_4.setFont(new Font("Tahoma", Font.PLAIN, 24));
-			lblNewLabel_2_4.setBounds(974, 461, 229, 20);
+			lblNewLabel_2_4.setBounds(1086, 444, 229, 20);
 			getContentPane().add(lblNewLabel_2_4);
 			
 			JLabel lblMostCasesBy = new JLabel("Most Cases By State");
+			lblMostCasesBy.setForeground(new Color(72, 61, 139));
 			lblMostCasesBy.setFont(new Font("Tahoma", Font.PLAIN, 26));
 			lblMostCasesBy.setBounds(26, 163, 269, 66);
 			getContentPane().add(lblMostCasesBy);
@@ -267,6 +257,18 @@ public class Country_UI extends JFrame {
 			btnSearch.setForeground(Color.BLACK);
 			btnSearch.setBounds(1184, 33, 117, 39);
 			getContentPane().add(btnSearch);
+			
+			ChartPanel chPanel2 = new ChartPanel(chart2.getChart());
+			getContentPane().add(chPanel2);
+			chPanel2.setBounds(393, 115, 560, 367);
+			chPanel2.setPreferredSize(new Dimension(560, 367)); //size according to my window
+			chPanel2.setMouseWheelEnabled(true);
+			
+			ChartPanel chPanel = new ChartPanel(chart.getChart());
+			chPanel.setBounds(393, 510, 560, 367);
+			getContentPane().add(chPanel);
+			chPanel.setPreferredSize(new Dimension(560, 367)); //size according to my window
+			chPanel.setMouseWheelEnabled(true);
 
 			
 		}
